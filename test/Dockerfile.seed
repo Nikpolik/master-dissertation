@@ -1,0 +1,18 @@
+FROM mongo:latest
+
+# Will be set through Environment Files
+ARG DATABASE_URI
+ARG USERNAME
+ARG PASSWORD
+ARG DATABASE
+
+ENV DATABASE_URI ${DATABASE_URI}
+ENV USERNAME ${USERNAME}
+ENV PASSWORD ${PASSWORD}
+ENV DATABASE ${DATABASE}
+
+COPY ./cypress/fixtures/db/ .
+
+CMD mongoimport ${DATABASE_URI} --collection User --jsonArray --drop --file /user.json && \
+    mongoimport ${DATABASE_URI} --collection Page --jsonArray --drop --file /page.json
+

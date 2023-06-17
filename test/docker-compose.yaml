@@ -1,0 +1,43 @@
+version: "3.9"
+name: blocks-editor-test-suite
+services:
+  mongodb:
+    container_name: ${COMPOSE_PROJECT_NAME}_mongo
+    image: mongo:latest
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=dev
+      - MONGO_INITDB_ROOT_PASSWORD=dev
+  backend:
+    container_name: ${COMPOSE_PROJECT_NAME}_backend
+    build:
+      context: ../backend
+      dockerfile: ../backend/Dockerfile
+    volumes:
+      - /var/dissertation/data/files:/usr/src/files
+    environment:
+      - MONGOURI=mongodb://dev:dev@mongodb:27017
+      - SECRET=fIC0mTkCFdWKauRx4XjHUs41qk1qea4f"
+    ports:
+      - 8890:8080
+  front:
+    container_name: ${COMPOSE_PROJECT_NAME}_front
+    build:
+      context: ../front/
+      dockerfile: ../front/Dockerfile
+      args:
+        SERVER_URL: http://localhost:8890
+    ports:
+      - 8888:80
+    volumes:
+      - ../docker/nginx/:/etc/nginx/conf.d/
+  mongo-seed:
+    container_name: ${COMPOSE_PROJECT_NAME}_seed
+    build:
+      dockerfile: Dockerfile.seed
+      args:
+        - DATABASE_URI=mongodb://dev:dev@mongodb:27017/dev?authSource=admin
+        - USERNAME=dev
+        - PASSWORD=dev
+        - DATABASE=dev
+    depends_on:
+      - mongodb

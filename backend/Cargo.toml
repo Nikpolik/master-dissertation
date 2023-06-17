@@ -1,0 +1,52 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+actix-web-httpauth = "0.8.0"
+actix-cors = "0.6.2"
+serde = "1.0.144"
+dotenv = "0.15.0"
+futures = "0.3"
+bcrypt = "0.13"
+regex = "1"
+jwt = "0.16.0"
+hmac = "0.12.1"
+sha2 = "0.10.5"
+serde_json = "0.9.0-rc2"
+async-fs = "1.6.0"
+rand = "0.8.4"
+actix-multipart = "0.4.0"
+futures-util = "0.3.25"
+mime = "0.3.16"
+actix-files = "0.6.2"
+urlencoding = "2.1.2"
+env_logger = "0.9"
+
+[dependencies.serde_with]
+version = "1.11.0"
+
+[dependencies.mongodb]
+version = "2.3.0"
+default-features = false
+features = ["async-std-runtime"]
+
+[dependencies.bson]
+version = "2.4.0"
+features = ["uuid-1", "serde_with", "chrono-0_4"]
+
+[dependencies.uuid]
+version = "1.1.2"
+features = [
+    "v4",                # Lets you generate random UUIDs
+    "fast-rng",          # Use a faster (but still sufficiently random) RNG
+    "macro-diagnostics", # Enable better diagnostics for compile-time UUIDs
+]
+
+[dependencies.chrono]
+version = "0.4"
+features = [
+  "serde"
+]

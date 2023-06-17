@@ -1,0 +1,28 @@
+version: "3.9"
+name: blocks-editor
+services:
+  mongodb:
+    container_name: ${COMPOSE_PROJECT_NAME}_mongo
+    image: mongo:latest
+    volumes:
+      - /var/dissertation/data/mongo/:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=dev
+      - MONGO_INITDB_ROOT_PASSWORD=dev
+  backend:
+    container_name: ${COMPOSE_PROJECT_NAME}_backend
+    image: nikpolik/dissertation_backend:latest
+    build:
+      context: ../backend
+      dockerfile: ../docker/backend.Dockerfile
+    volumes:
+      - /var/dissertation/data/files:/usr/src/files
+    ports:
+      - 8889:8080
+  front:
+    container_name: ${COMPOSE_PROJECT_NAME}_front
+    image: nikpolik/dissertation_front:latest
+    ports:
+      - 8888:80
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d/

@@ -1,0 +1,13 @@
+version: "3.9"
+name: blocks-editor
+services:
+  mongodb:
+    container_name: ${COMPOSE_PROJECT_NAME}_mongo
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data/mongo/:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=dev
+      - MONGO_INITDB_ROOT_PASSWORD=dev
