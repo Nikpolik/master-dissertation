@@ -32,7 +32,7 @@ function PageCard(props: PageCardProps) {
 
   async function shareUrl() {
     console.log("Share clicked")
-    const url = new URL(`/${id}/public`, window.location.href).href;
+    const url = new URL(`/pages/${id}/public`, window.location.href).href;
     try {
       navigator.share ? await navigator.share({ text: url, title: pageName }) : await navigator.clipboard.writeText(url);
       window.alert('Copied page url to clipboard!');
