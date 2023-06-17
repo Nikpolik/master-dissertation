@@ -20,19 +20,17 @@ jobs:
       - name: Build and push backend
         uses: docker/build-push-action@v4
         if: ${{ github.event_name == 'push' && contains(github.event.compare, 'backend/') }}
-        working-directory: backend/
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./front/
+          file: ./front/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/dissertation_backend:latest
       - name: Build and push front
         uses: docker/build-push-action@v4
         if: ${{ github.event_name == 'push' && contains(github.event.compare, 'front/') }}
-        working-directory: front/
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./backend/
+          file: ./backend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/dissertation_front:latest
   deploy:
