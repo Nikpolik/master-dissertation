@@ -19,7 +19,6 @@ jobs:
         uses: docker/setup-buildx-action@v2
       - name: Build and push backend
         uses: docker/build-push-action@v4
-        if: ${{ github.event_name == 'push' && contains(github.event.compare, 'backend/') }}
         with:
           context: ./front/
           file: ./front/Dockerfile
@@ -27,7 +26,6 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/dissertation_backend:latest
       - name: Build and push front
         uses: docker/build-push-action@v4
-        if: ${{ github.event_name == 'push' && contains(github.event.compare, 'front/') }}
         with:
           context: ./backend/
           file: ./backend/Dockerfile
