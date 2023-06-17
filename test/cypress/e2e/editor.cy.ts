@@ -27,7 +27,7 @@ describe("Editor", () => {
       .should("not.have.css", "display", "none");
   });
 
-  it.only("Can edit an block type", () => {
+  it("Can edit an block type", () => {
     cy.getBlock(ROOT_BLOCK).getInput("children").addBlock();
     cy.getBlock(CONTAINER_BLOCK).should("exist");
     cy.getBlock(CONTAINER_BLOCK).blockAction("toggle");
@@ -43,7 +43,7 @@ describe("Editor", () => {
     cy.get("#preview-root").contains("Hello World");
   });
 
-  it.only("Can save updates", () => {
+  it("Can save updates", () => {
     cy.getBlock(ROOT_BLOCK).getInput("children").addBlock();
     cy.getBlock(CONTAINER_BLOCK).should("exist");
     cy.getBlock(CONTAINER_BLOCK).blockAction("toggle");
@@ -64,6 +64,26 @@ describe("Editor", () => {
     cy.getBlock(ROOT_BLOCK).getInput("children").addBlock();
     cy.getBlock(CONTAINER_BLOCK).should("exist");
     cy.getBlock(CONTAINER_BLOCK).blockAction("toggle");
+  });
+
+  it("Can publish a page", () => {
+    cy.getBlock(ROOT_BLOCK).getInput("children").addBlock();
+    cy.getBlock(CONTAINER_BLOCK).should("exist");
+    cy.getBlock(CONTAINER_BLOCK).blockAction("toggle");
+    cy.getBlock(CONTAINER_BLOCK)
+      .getInput("children")
+      .children("[data-cy='editor-drop-target']")
+      .blockAction("edit");
+    cy.contains("Text Block").click();
+    cy.getBlock("textBlock").blockAction("toggle");
+    cy.getBlock("textBlock").getInput("text").find("input").type("Hello World");
+    cy.get("[data-cy='editor-save']").click();
+    cy.get("[data-cy='editor-publish']").click();
+    cy.visit("/pages");
+    cy.get("[data-cy='pages-share-button']")
+      .invoke("removeAttr", "target")
+      .click();
+    cy.contains("Hello World");
   });
 
   it("Can drag inputs", () => {
