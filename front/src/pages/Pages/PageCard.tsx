@@ -31,10 +31,11 @@ function PageCard(props: PageCardProps) {
   const formattedDate = new Date(createdAt * 1000).toLocaleDateString();
 
   async function shareUrl() {
-    console.log("Share clicked")
-    const url = new URL(`/pages/${id}/public`, window.location.href).href;
+    const url = new URL(`/public/${id}`, window.location.href).href;
     try {
-      navigator.share ? await navigator.share({ text: url, title: pageName }) : await navigator.clipboard.writeText(url);
+      navigator.share
+        ? await navigator.share({ text: url, title: pageName })
+        : await navigator.clipboard.writeText(url);
       window.alert('Copied page url to clipboard!');
     } catch (e) {
       console.error(e);

@@ -72,7 +72,6 @@ function App() {
                   </PrivateRoute>
                 }
               />
-              <Route path="public" element={<Public />} />
             </Route>
           </Route>
           <Route path="media">
@@ -86,6 +85,7 @@ function App() {
               }
             />
           </Route>
+          <Route path="public/:id" element={<Public />} />
           <Route index element={<Navigate to="/pages" />} />
         </Routes>
       </ThemeProvider>
