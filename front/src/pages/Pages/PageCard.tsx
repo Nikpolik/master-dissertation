@@ -29,19 +29,7 @@ const StyledCardActions = styled(CardActions)`
 function PageCard(props: PageCardProps) {
   const { id, pageName, createdAt, description } = props.page;
   const formattedDate = new Date(createdAt * 1000).toLocaleDateString();
-
-  async function shareUrl() {
-    const url = new URL(`/public/${id}`, window.location.href).href;
-    try {
-      navigator.share
-        ? await navigator.share({ text: url, title: pageName })
-        : await navigator.clipboard.writeText(url);
-      window.alert('Copied page url to clipboard!');
-    } catch (e) {
-      console.error(e);
-      window.alert(`Failed to get permssions to page url to clipboard! You can copy it manually: ${url}`);
-    }
-  }
+  const shareUrl = new URL(`/public/${id}`, window.location.href).href;
 
   return (
     <StyledCard data-cy="pages-card">
@@ -52,7 +40,7 @@ function PageCard(props: PageCardProps) {
         </Typography>
       </CardContent>
       <StyledCardActions disableSpacing>
-        <IconButton data-cy="pages-share-button" onClick={shareUrl}>
+        <IconButton target="_blank" href={shareUrl} data-cy="pages-share-button">
           <ShareIcon />
         </IconButton>
         <IconButton data-cy="pages-edit-button" LinkComponent={LinkWrapper} href={`${id}/edit`}>
