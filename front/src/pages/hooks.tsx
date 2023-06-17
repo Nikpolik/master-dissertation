@@ -88,8 +88,8 @@ function useDeletePage(id: string) {
   return { loading, deletePage: deletePage };
 }
 
-function useFetchPage(id: string, rootId: string, publicVersion?: boolean) {
-  const url = publicVersion ? `pages/${id}/public` : `pages/${id}/components`;
+function useFetchPage(id: string, rootId: string) {
+  const url = `pages/${id}/components`;
   const { request } = useRequest(url, HttpMethod.GET);
   const [loading, setLoading] = useState(false);
   const initializePage = useInitializeInputs();
@@ -135,34 +135,66 @@ function usePublishPage(pageId: string) {
   return { loading, publishPage };
 }
 
+async function renderPage(rootId: string, previewElementId: string, inputs: BlockState[], prevRoot?: Root) {
+  const previewElement = document.getElementById(previewElementId) as HTMLElement;
+
+  if (!previewElement) {
+    return;
+  }
+
+  let root: Root = prevRoot || ReactDOM.createRoot(previewElement);
+
+  root.render(
+    <StrictMode key={Date.now()}>
+      <RecoilRoot>
+        <RecoilExporter />
+        <RenderApp rootId={rootId} inputs={inputs} />
+      </RecoilRoot>
+    </StrictMode>
+  );
+
+  return root;
+}
+
 export function useRenderPreview(rootId: string, previewElementId: string) {
   const getInputs = useGetAllInputs(rootId);
-  const rootRef = useRef<Root | null>(null);
+  const rootRef = useRef<Root | undefined>();
 
   async function renderPreview(initialInputs?: BlockState[]) {
     const inputs = initialInputs ? initialInputs : await getInputs();
-    const previewElement = document.getElementById(previewElementId) as HTMLElement;
-    if (!previewElement) {
-      return;
-    }
-
-    if (!rootRef.current) {
-      rootRef.current = ReactDOM.createRoot(previewElement);
-    }
-
-    const root = rootRef.current;
-
-    root.render(
-      <StrictMode key={Date.now()}>
-        <RecoilRoot>
-          <RecoilExporter />
-          <RenderApp rootId={rootId} inputs={inputs} />
-        </RecoilRoot>
-      </StrictMode>
-    );
+    rootRef.current = await renderPage(rootId, previewElementId, inputs, rootRef.current);
   }
 
   return { renderPreview };
 }
 
-export { usePages, useCreatePage, usePage, useDeletePage, useFetchPage, useSavePage, usePublishPage };
+function usePublicPage(id: string): { loading: boolean; page?: Page } {
+  const { request: fetchPage, loading } = useRequest(`pages/${id}/public`, HttpMethod.GET);
+  const { request: fetchComponents, loading: loadingComponents } = useRequest(
+    `pages/${id}/public/components`,
+    HttpMethod.GET
+  );
+  const rootRef = useRef<Root | undefined>();
+
+  useEffect(() => {
+    // IIIFE to use async/await
+    (async () => {
+      const [pageResponse, componentsResponse] = await Promise.all([
+        fetchPage<Page>(),
+        fetchComponents<BlockState[]>(),
+      ]);
+      if (!pageResponse.data || !componentsResponse.data) {
+        console.error(`Failed to fetch page ${id}`);
+        return;
+      }
+
+      const rootId = pageResponse.data.rootId;
+      const inputs = componentsResponse.data;
+      rootRef.current = await renderPage(rootId, 'preview-root', inputs, rootRef.current);
+    })();
+  }, []);
+
+  return { loading: loading || loadingComponents };
+}
+
+export { usePages, useCreatePage, usePage, useDeletePage, useFetchPage, useSavePage, usePublishPage, usePublicPage };

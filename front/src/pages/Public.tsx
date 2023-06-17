@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { useFetchPage, usePage } from './hooks';
+import { usePublicPage } from './hooks';
 
 const Container = styled.div`
   height: 100%;
@@ -27,12 +27,7 @@ function Public() {
     throw new Error('Could not fetch id from url params, check routing');
   }
 
-  const { page, loading: pagesLoading } = usePage(id);
-  const { loading: componentsLoading } = useFetchPage(id, page?.rootId || '', true);
-
-  if (pagesLoading || componentsLoading) {
-    return <LoadingContainer>Loading...</LoadingContainer>;
-  }
+  usePublicPage(id);
 
   return (
     <Container>
