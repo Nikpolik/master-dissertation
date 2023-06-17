@@ -17,20 +17,20 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
-      - name: Build and push backend
+      - name: Build and push front
         uses: docker/build-push-action@v4
         with:
           context: ./front/
           file: ./front/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dissertation_backend:latest
-      - name: Build and push front
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dissertation_front:latest
+      - name: Build and push backend
         uses: docker/build-push-action@v4
         with:
           context: ./backend/
           file: ./backend/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dissertation_front:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dissertation_backend:latest
   deploy:
     runs-on: ubuntu-latest
     needs: build
