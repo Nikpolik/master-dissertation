@@ -2,8 +2,8 @@ import { BlockEntry, InputType, PrimitiveBlocks, registerBlock, useInputs } from
 import { MutableRefObject, useEffect, useRef } from 'react';
 
 // map keys to ids;
-export const stores = new Map<string, string>;
-export const subscriptions = new Map<string, Set<string>>;
+export const stores: Map<string, string> = new Map();
+export const subscriptions: Map<string, Set<string>> = new Map();
 
 function addSubscription(storeKey: string, blockId: string) {
   const store = stores.get(storeKey);
@@ -43,7 +43,6 @@ const StoreBlock = (props: StoreBlockProps) => {
     }
     prevKey.current = key;
     stores.set(key, props.id);
-
   }, [key]);
 
   return <></>;
@@ -61,8 +60,8 @@ const storeEntry: BlockEntry = {
   },
   type: InputType.block,
   name: 'Store',
-  category: "Store"
+  category: 'Store',
 };
 
 registerBlock('store', storeEntry);
-export { addSubscription }
+export { addSubscription };
