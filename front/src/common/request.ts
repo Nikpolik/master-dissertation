@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export const BASE_URL = process.env.REACT_APP_SERVER_URL || 'http://localhost:8080';
 
-console.log(BASE_URL);
+console.log(`Using server URL: ${BASE_URL}`);
 
 export enum HttpMethod {
   POST = 'POST',

@@ -127,12 +127,9 @@ function useDropInput() {
           return;
         }
 
-        console.log({ targetParentId, targetInputId });
-
         if (targetParentId !== currentParentId) {
           const targetInputs = switchInputs(targetParentState.inputs, targetName, targetInputId, itemId);
           const currentInputs = switchInputs(currentParentState.inputs, currentName, itemId, targetInputId);
-          console.log('Doing swap between differnt parents');
 
           set(blockStateAtomFamily(targetParentId), {
             ...targetParentState,
@@ -148,9 +145,7 @@ function useDropInput() {
         let targetInputs;
         if (targetName === currentName) {
           targetInputs = swapInputs(targetParentState.inputs, targetName, targetInputId, itemId);
-          console.log('Doing simple swap');
         } else {
-          console.log('Doing switch between different children');
           targetInputs = switchInputs(targetParentState.inputs, targetName, targetInputId, itemId);
           targetInputs = switchInputs(targetInputs, currentName, itemId, targetInputId);
         }
