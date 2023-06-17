@@ -74,7 +74,7 @@ function CreatePage() {
           <Button variant="contained" onClick={handleClose}>
             Discard
           </Button>
-          <LoadingButton type='submit' variant="contained" loading={loading} onClick={handleCreate} autoFocus>
+          <LoadingButton type="submit" variant="contained" loading={loading} onClick={handleCreate} autoFocus>
             Create
           </LoadingButton>
         </StyledActions>

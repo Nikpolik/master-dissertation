@@ -1,1670 +1,1371 @@
-[{
-  "_id": {
-    "$binary": {
-      "base64": "ZMaXreO9TJeTvu2nrLgHXw==",
-      "subType": "04"
-    }
+[
+  {
+    "_id": {
+      "$binary": {
+        "base64": "ZMaXreO9TJeTvu2nrLgHXw==",
+        "subType": "04"
+      }
+    },
+    "pageName": "First Page Please does this work?",
+    "rootId": {
+      "$binary": {
+        "base64": "VnPM4Vi+S1aBufxDoi3LTg==",
+        "subType": "04"
+      }
+    },
+    "user_id": {
+      "$oid": "644cef90f9a388bd95bb85cd"
+    },
+    "created_at": {
+      "$date": "2023-04-29T10:21:21.158Z"
+    },
+    "description": "My First Page",
+    "components": [
+      {
+        "id": "5673cce1-58be-4b56-81b9-fc43a22dcb4e",
+        "blockName": "Root",
+        "value": null,
+        "inputs": {
+          "children": ["1367aee5-604f-4827-b869-dc39de13f98a", "de14c4b7-ff8f-4dce-bc76-faaf64f16e8b"]
+        }
+      },
+      {
+        "id": "de14c4b7-ff8f-4dce-bc76-faaf64f16e8b",
+        "blockName": "image",
+        "value": "",
+        "inputs": {
+          "url": ["3c47929e-195a-4d4b-a2d7-636bcd32b23a"],
+          "alt": ["09311eb1-f471-447c-8b2e-db9e724f6efb"]
+        }
+      },
+      {
+        "id": "09311eb1-f471-447c-8b2e-db9e724f6efb",
+        "blockName": "string",
+        "value": null,
+        "inputs": {}
+      },
+      {
+        "id": "3c47929e-195a-4d4b-a2d7-636bcd32b23a",
+        "blockName": "string",
+        "value": null,
+        "inputs": {}
+      },
+      {
+        "id": "1367aee5-604f-4827-b869-dc39de13f98a",
+        "blockName": "container",
+        "value": null,
+        "inputs": {
+          "containerElement": ["a7df96a5-109c-4926-b7ba-ac6945ae7df0"],
+          "customCss": ["838b52e6-76b1-4aac-a42e-afec779fe801"],
+          "children": ["aec460e9-2b87-44e5-a889-fc7a63f6b4fd"]
+        }
+      },
+      {
+        "id": "838b52e6-76b1-4aac-a42e-afec779fe801",
+        "blockName": "textarea",
+        "value": null,
+        "inputs": {}
+      },
+      {
+        "id": "aec460e9-2b87-44e5-a889-fc7a63f6b4fd",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["fb4c1686-f238-48fa-9f48-118e44aebe9f"]
+        }
+      },
+      {
+        "id": "fb4c1686-f238-48fa-9f48-118e44aebe9f",
+        "blockName": "string",
+        "value": "Demo",
+        "inputs": {}
+      },
+      {
+        "id": "a7df96a5-109c-4926-b7ba-ac6945ae7df0",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      }
+    ],
+    "public_components": [
+      {
+        "id": "5673cce1-58be-4b56-81b9-fc43a22dcb4e",
+        "blockName": "Root",
+        "value": null,
+        "inputs": {
+          "children": ["1367aee5-604f-4827-b869-dc39de13f98a"]
+        }
+      },
+      {
+        "id": "1367aee5-604f-4827-b869-dc39de13f98a",
+        "blockName": "container",
+        "value": null,
+        "inputs": {
+          "children": ["aec460e9-2b87-44e5-a889-fc7a63f6b4fd"],
+          "customCss": ["838b52e6-76b1-4aac-a42e-afec779fe801"],
+          "containerElement": ["a7df96a5-109c-4926-b7ba-ac6945ae7df0"]
+        }
+      },
+      {
+        "id": "aec460e9-2b87-44e5-a889-fc7a63f6b4fd",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["fb4c1686-f238-48fa-9f48-118e44aebe9f"]
+        }
+      },
+      {
+        "id": "fb4c1686-f238-48fa-9f48-118e44aebe9f",
+        "blockName": "string",
+        "value": "Demo",
+        "inputs": {}
+      },
+      {
+        "id": "a7df96a5-109c-4926-b7ba-ac6945ae7df0",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "838b52e6-76b1-4aac-a42e-afec779fe801",
+        "blockName": "textarea",
+        "value": null,
+        "inputs": {}
+      }
+    ]
   },
-  "pageName": "First Page Please does this work?",
-  "rootId": {
-    "$binary": {
-      "base64": "VnPM4Vi+S1aBufxDoi3LTg==",
-      "subType": "04"
-    }
+  {
+    "_id": {
+      "$binary": {
+        "base64": "aq8CkFb0TcWBliatShDNwg==",
+        "subType": "04"
+      }
+    },
+    "pageName": "MyFirstPage From prod",
+    "rootId": {
+      "$binary": {
+        "base64": "2oLlhsTIS2Cp4myW30fNVw==",
+        "subType": "04"
+      }
+    },
+    "user_id": {
+      "$oid": "644cef90f9a388bd95bb85cd"
+    },
+    "created_at": {
+      "$date": "2023-04-29T17:20:10.246Z"
+    },
+    "description": "The First Page",
+    "components": [
+      {
+        "id": "da82e586-c4c8-4b60-a9e2-6c96df47cd57",
+        "blockName": "Root",
+        "value": null,
+        "inputs": {
+          "children": [
+            "f3e1481b-4bcb-45c1-b923-089ccdd7b772",
+            "8fa013b8-a60a-499b-bb6e-94ce18381d0c",
+            "9a7d98b7-dd2e-4548-be1b-4295b63ce0f7"
+          ]
+        }
+      },
+      {
+        "id": "9a7d98b7-dd2e-4548-be1b-4295b63ce0f7",
+        "blockName": "container",
+        "value": null,
+        "inputs": {
+          "children": ["79a53687-90cb-4da5-bf0f-c95500075bac"],
+          "containerElement": ["3516ce21-6033-4a56-ae2f-8b56924070cc"],
+          "customCss": ["a0dc8d14-5193-4914-ac35-1bf31b3a1697"]
+        }
+      },
+      {
+        "id": "79a53687-90cb-4da5-bf0f-c95500075bac",
+        "blockName": "store",
+        "value": "",
+        "inputs": {
+          "key": ["864995cd-f7ca-4587-ac09-7feb8e581bdd"]
+        }
+      },
+      {
+        "id": "864995cd-f7ca-4587-ac09-7feb8e581bdd",
+        "blockName": "string",
+        "value": "selected-category",
+        "inputs": {}
+      },
+      {
+        "id": "a0dc8d14-5193-4914-ac35-1bf31b3a1697",
+        "blockName": "textarea",
+        "value": null,
+        "inputs": {}
+      },
+      {
+        "id": "3516ce21-6033-4a56-ae2f-8b56924070cc",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "8fa013b8-a60a-499b-bb6e-94ce18381d0c",
+        "blockName": "fetchData",
+        "value": "",
+        "inputs": {
+          "children": ["8112fe5c-83ab-4c10-889f-cacdc2159cc1"],
+          "url": ["963e073f-008d-4d76-8168-51c7bdff8662"],
+          "Loading": ["1a3ff28a-566e-45a9-a816-7734c3706ade"]
+        }
+      },
+      {
+        "id": "963e073f-008d-4d76-8168-51c7bdff8662",
+        "blockName": "add",
+        "value": "",
+        "inputs": {
+          "values": ["2ac944a5-650f-4fc5-a976-876872a42bc7", "4292ab82-ca4b-463a-8d8a-7118d91e2b32"]
+        }
+      },
+      {
+        "id": "4292ab82-ca4b-463a-8d8a-7118d91e2b32",
+        "blockName": "getStore",
+        "value": "",
+        "inputs": {
+          "key": ["3fbbac10-5958-4ac6-a89a-94ce39de2e4c"]
+        }
+      },
+      {
+        "id": "3fbbac10-5958-4ac6-a89a-94ce39de2e4c",
+        "blockName": "string",
+        "value": "selected-category",
+        "inputs": {}
+      },
+      {
+        "id": "2ac944a5-650f-4fc5-a976-876872a42bc7",
+        "blockName": "string",
+        "value": "https://fakestoreapi.com/products/category/",
+        "inputs": {}
+      },
+      {
+        "id": "8112fe5c-83ab-4c10-889f-cacdc2159cc1",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "customCss": ["aac91c64-c063-44e8-af7e-a5bf2c45b21e"],
+          "containerElement": ["6db6b703-0969-4053-a264-6fc4d0e940ce"],
+          "children": ["b8fff59a-0028-4702-9a0e-6d6e5f7fbdb6"]
+        }
+      },
+      {
+        "id": "b8fff59a-0028-4702-9a0e-6d6e5f7fbdb6",
+        "blockName": "reducer",
+        "value": "",
+        "inputs": {
+          "values": ["1e118ee6-b5d5-44ef-9315-ff61b29afd13"],
+          "block": ["839e117d-5f22-4151-b178-3f95eac6f721"]
+        }
+      },
+      {
+        "id": "839e117d-5f22-4151-b178-3f95eac6f721",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "children": [
+            "349c64ab-bcc5-40a4-a1e2-b4a462258dfb",
+            "ff08aef2-924f-4c71-9b45-5f538773e97e",
+            "cc6f452f-73ba-4cfb-bac5-2d43438fecf4",
+            "6ac8934b-012f-433e-86d9-ed066286a47c"
+          ],
+          "containerElement": ["48168a01-68f4-457a-987b-5ab1ccbf3e78"],
+          "customCss": ["b8648d7e-0f30-4747-9bc3-72d622388a34"]
+        }
+      },
+      {
+        "id": "b8648d7e-0f30-4747-9bc3-72d622388a34",
+        "blockName": "textarea",
+        "value": "box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\ntransition: 0.3s;\nborder-radius: 8px;\npadding: 16px;\nheight: 460px;\ndisplay: flex;\nflex-direction: column;\ngap: 8px;",
+        "inputs": {}
+      },
+      {
+        "id": "48168a01-68f4-457a-987b-5ab1ccbf3e78",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "6ac8934b-012f-433e-86d9-ed066286a47c",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "customCss": ["462e9ea7-4704-4a03-958b-205b4f3b5973"],
+          "containerElement": ["8eb9505d-b83e-48e6-9d3b-c257fc4d659a"],
+          "text": ["4269ac63-4d86-480e-bbfd-6e32a5c8fd20"]
+        }
+      },
+      {
+        "id": "8eb9505d-b83e-48e6-9d3b-c257fc4d659a",
+        "blockName": "string",
+        "value": "p",
+        "inputs": {}
+      },
+      {
+        "id": "462e9ea7-4704-4a03-958b-205b4f3b5973",
+        "blockName": "textarea",
+        "value": "font-size: 12px;\ntext-overflow: ellipsis;",
+        "inputs": {}
+      },
+      {
+        "id": "4269ac63-4d86-480e-bbfd-6e32a5c8fd20",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["7418da84-bafa-404b-b7a9-f7d7b14f21eb"]
+        }
+      },
+      {
+        "id": "7418da84-bafa-404b-b7a9-f7d7b14f21eb",
+        "blockName": "string",
+        "value": "description",
+        "inputs": {}
+      },
+      {
+        "id": "cc6f452f-73ba-4cfb-bac5-2d43438fecf4",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["7c106412-c778-4f77-9abf-8b1d3ba93d1b"],
+          "customCss": ["551b9261-fbf1-4472-96ec-738b0981ed34"],
+          "containerElement": ["8d5e705c-505c-42c3-a39c-ee20f44d9eb7"]
+        }
+      },
+      {
+        "id": "8d5e705c-505c-42c3-a39c-ee20f44d9eb7",
+        "blockName": "string",
+        "value": "p",
+        "inputs": {}
+      },
+      {
+        "id": "551b9261-fbf1-4472-96ec-738b0981ed34",
+        "blockName": "textarea",
+        "value": "text-align: center;\nfont-size: 20px;\nfont-weight: bold;",
+        "inputs": {}
+      },
+      {
+        "id": "7c106412-c778-4f77-9abf-8b1d3ba93d1b",
+        "blockName": "add",
+        "value": "",
+        "inputs": {
+          "values": ["8e834602-ed11-495d-a9ec-c22721a74b81", "20d88e69-b5be-4ba7-8722-55c1b92a2198"]
+        }
+      },
+      {
+        "id": "20d88e69-b5be-4ba7-8722-55c1b92a2198",
+        "blockName": "string",
+        "value": "$",
+        "inputs": {}
+      },
+      {
+        "id": "8e834602-ed11-495d-a9ec-c22721a74b81",
+        "blockName": "dataSelector",
+        "value": null,
+        "inputs": {
+          "selector": ["9ab344b7-f46c-449b-9452-c934a6497f9d"]
+        }
+      },
+      {
+        "id": "9ab344b7-f46c-449b-9452-c934a6497f9d",
+        "blockName": "string",
+        "value": "price",
+        "inputs": {}
+      },
+      {
+        "id": "ff08aef2-924f-4c71-9b45-5f538773e97e",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["117657f5-f059-4e52-98ff-e0321a9eaf11"],
+          "customCss": ["03e27cc3-4e59-4d72-8ee4-4078b1b5b412"],
+          "containerElement": ["019ea8f1-4ac2-469c-b6cb-5d8668a7f3d1"]
+        }
+      },
+      {
+        "id": "03e27cc3-4e59-4d72-8ee4-4078b1b5b412",
+        "blockName": "textarea",
+        "value": "padding: 8px 16px;\ntext-align: center;\nfont-weight: 18px;",
+        "inputs": {}
+      },
+      {
+        "id": "117657f5-f059-4e52-98ff-e0321a9eaf11",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["87bdcadf-5151-4c90-9087-3bf02b60b830"]
+        }
+      },
+      {
+        "id": "87bdcadf-5151-4c90-9087-3bf02b60b830",
+        "blockName": "string",
+        "value": "title",
+        "inputs": {}
+      },
+      {
+        "id": "019ea8f1-4ac2-469c-b6cb-5d8668a7f3d1",
+        "blockName": "string",
+        "value": "p",
+        "inputs": {}
+      },
+      {
+        "id": "349c64ab-bcc5-40a4-a1e2-b4a462258dfb",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "customCss": ["919330d1-27ff-45d8-9ed0-e342f0dc8d5d"],
+          "children": ["1168a0ee-f496-4ec6-bc04-f831a87fe76d"],
+          "containerElement": ["5c0bef6e-4036-49e6-be1d-5c0fb4258270"]
+        }
+      },
+      {
+        "id": "919330d1-27ff-45d8-9ed0-e342f0dc8d5d",
+        "blockName": "textarea",
+        "value": "height: 240px;",
+        "inputs": {}
+      },
+      {
+        "id": "1168a0ee-f496-4ec6-bc04-f831a87fe76d",
+        "blockName": "image",
+        "value": "",
+        "inputs": {
+          "alt": ["e0a183cb-6ef7-4757-bb7b-61c79fd00622"],
+          "customCss": ["afd627db-4ba6-4dd2-bb54-9c4804766849"],
+          "url": ["afd627db-4ba6-4dd2-bb54-9c48047668a1"]
+        }
+      },
+      {
+        "id": "afd627db-4ba6-4dd2-bb54-9c4804766849",
+        "blockName": "Root",
+        "value": null,
+        "inputs": {
+          "children": []
+        }
+      },
+      {
+        "id": "afd627db-4ba6-4dd2-bb54-9c48047668a1",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["e8680c7c-9bc5-47eb-96d5-0a3d3a6afb9f"]
+        }
+      },
+      {
+        "id": "e8680c7c-9bc5-47eb-96d5-0a3d3a6afb9f",
+        "blockName": "string",
+        "value": "image",
+        "inputs": {}
+      },
+      {
+        "id": "e0a183cb-6ef7-4757-bb7b-61c79fd00622",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["046d8391-43b2-424c-84d5-4390bde42584"]
+        }
+      },
+      {
+        "id": "046d8391-43b2-424c-84d5-4390bde42584",
+        "blockName": "string",
+        "value": "title",
+        "inputs": {}
+      },
+      {
+        "id": "5c0bef6e-4036-49e6-be1d-5c0fb4258270",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "1e118ee6-b5d5-44ef-9315-ff61b29afd13",
+        "blockName": "dataSelector",
+        "value": null,
+        "inputs": {
+          "selector": ["537dcd3b-484c-4a8d-b1d5-6d27bd82da2a"]
+        }
+      },
+      {
+        "id": "537dcd3b-484c-4a8d-b1d5-6d27bd82da2a",
+        "blockName": "string",
+        "value": "title",
+        "inputs": {}
+      },
+      {
+        "id": "6db6b703-0969-4053-a264-6fc4d0e940ce",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "aac91c64-c063-44e8-af7e-a5bf2c45b21e",
+        "blockName": "textarea",
+        "value": "display: grid;\ngap: 12px;\ngrid-template-columns: repeat(auto-fit, minmax(150px, 300px) );\npadding: 36px;\n\n@media screen and (max-width: 600px) {\n   & {\n      padding: 36px 0px;\n      justify-content: center;\n   }\n }",
+        "inputs": {}
+      },
+      {
+        "id": "1a3ff28a-566e-45a9-a816-7734c3706ade",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["6c5975db-6f70-4d57-84ce-4a42cb220222"]
+        }
+      },
+      {
+        "id": "6c5975db-6f70-4d57-84ce-4a42cb220222",
+        "blockName": "string",
+        "value": "Loading...",
+        "inputs": {}
+      },
+      {
+        "id": "f3e1481b-4bcb-45c1-b923-089ccdd7b772",
+        "blockName": "fetchData",
+        "value": "",
+        "inputs": {
+          "url": ["838d9afb-61ac-41b2-bd70-001dea68bdf8"],
+          "children": ["92b17b16-631f-424e-a039-5c6dcdb8c44d"],
+          "Loading": ["f9a7f926-04f5-4228-8993-6f925d9af303"]
+        }
+      },
+      {
+        "id": "838d9afb-61ac-41b2-bd70-001dea68bdf8",
+        "blockName": "string",
+        "value": "https://fakestoreapi.com/products/categories",
+        "inputs": {}
+      },
+      {
+        "id": "92b17b16-631f-424e-a039-5c6dcdb8c44d",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "containerElement": ["79f3d67d-d7bc-4285-87cd-6ba2a955ce5c"],
+          "children": ["6a5d1a9b-412e-44ef-ad6a-7d80b08787b5"],
+          "customCss": ["881d9135-a318-40dd-9f03-1f02261c94d5"]
+        }
+      },
+      {
+        "id": "881d9135-a318-40dd-9f03-1f02261c94d5",
+        "blockName": "textarea",
+        "value": "width: 100%;\noverflow-x: auto;\n\n@media screen and (max-width: 600px) {\n   & {\n      box-shadow: 5px 0 5px -5px #333;\n   }\n }",
+        "inputs": {}
+      },
+      {
+        "id": "6a5d1a9b-412e-44ef-ad6a-7d80b08787b5",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "customCss": ["a2de7d6b-30ba-4f10-9651-b8d71254f20c"],
+          "containerElement": ["1dd30c78-5dd3-483b-afa0-4d65aeddc566"],
+          "children": ["6cdcc45f-c6f0-44b8-b547-4665a1c4fe10"]
+        }
+      },
+      {
+        "id": "6cdcc45f-c6f0-44b8-b547-4665a1c4fe10",
+        "blockName": "reducer",
+        "value": "",
+        "inputs": {
+          "block": ["a0eb9b8c-da49-4006-9e84-f136ae0784b3"],
+          "values": ["aa350612-07e3-465c-bd83-5faa529d9649"]
+        }
+      },
+      {
+        "id": "aa350612-07e3-465c-bd83-5faa529d9649",
+        "blockName": "dataSelector",
+        "value": null,
+        "inputs": {
+          "selector": ["d9a2c719-9329-44c7-8623-5afab1c90070"]
+        }
+      },
+      {
+        "id": "d9a2c719-9329-44c7-8623-5afab1c90070",
+        "blockName": "string",
+        "value": "",
+        "inputs": {}
+      },
+      {
+        "id": "a0eb9b8c-da49-4006-9e84-f136ae0784b3",
+        "blockName": "button",
+        "value": "",
+        "inputs": {
+          "customCss": ["55e7936e-d579-48ac-8b68-06bd4a373db1"],
+          "onClick": ["a91ee1ff-6c81-40a9-9a2a-30ef54212779"],
+          "children": ["c6a7c68c-e56b-402b-87e7-cfc8adbaf63d", "3508cfeb-9caf-48ce-a1a1-1b769e3d83db"]
+        }
+      },
+      {
+        "id": "55e7936e-d579-48ac-8b68-06bd4a373db1",
+        "blockName": "textarea",
+        "value": "width: 300px;\nheight: 200px;\nposition: relative;\nborder: none;\ncolor: black;\ntext-align: center;\ntext-decoration: none;\nfont-size: 20px;\ncursor: pointer;\nborder-radius: 8px;\npadding: 12px 30px;\ntransition-duration: 0.4s;\nbox-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\nposition: relative;\noverflow: hidden;\ntex-transform: capitalize;\n\n&:hover {\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);\n  transform: translateY(-3px);\n}",
+        "inputs": {}
+      },
+      {
+        "id": "a91ee1ff-6c81-40a9-9a2a-30ef54212779",
+        "blockName": "setStore",
+        "value": "",
+        "inputs": {
+          "key": ["4eb91c82-d76e-4933-8b69-836d7e62fdec"],
+          "value": ["ce9413ac-c591-4d41-bead-55505d082690"]
+        }
+      },
+      {
+        "id": "4eb91c82-d76e-4933-8b69-836d7e62fdec",
+        "blockName": "string",
+        "value": "selected-category",
+        "inputs": {}
+      },
+      {
+        "id": "ce9413ac-c591-4d41-bead-55505d082690",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["a8664540-7103-481a-81ca-9f881240d667"]
+        }
+      },
+      {
+        "id": "a8664540-7103-481a-81ca-9f881240d667",
+        "blockName": "string",
+        "value": "",
+        "inputs": {}
+      },
+      {
+        "id": "3508cfeb-9caf-48ce-a1a1-1b769e3d83db",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "customCss": ["b2ce806f-5f00-47b8-a4ac-a2ba17d44c83"],
+          "containerElement": ["d021f1f8-8ae8-4b87-b5dd-923f0e3871d6"],
+          "children": ["5efa00d6-d471-4047-8312-912236435d1a"]
+        }
+      },
+      {
+        "id": "b2ce806f-5f00-47b8-a4ac-a2ba17d44c83",
+        "blockName": "textarea",
+        "value": "position: absolute;\ninset: 0;\ncolor: white;\nbackdrop-filter: brightness(75%);\ndisplay: flex;\njustify-content: center;\nalign-items: center;",
+        "inputs": {}
+      },
+      {
+        "id": "5efa00d6-d471-4047-8312-912236435d1a",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["493f9b1d-5154-4847-bb18-5209010483f0"]
+        }
+      },
+      {
+        "id": "493f9b1d-5154-4847-bb18-5209010483f0",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["0c728fdc-6a11-45c5-8509-918744f0507c"]
+        }
+      },
+      {
+        "id": "0c728fdc-6a11-45c5-8509-918744f0507c",
+        "blockName": "string",
+        "value": "",
+        "inputs": {}
+      },
+      {
+        "id": "d021f1f8-8ae8-4b87-b5dd-923f0e3871d6",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "c6a7c68c-e56b-402b-87e7-cfc8adbaf63d",
+        "blockName": "image",
+        "value": "",
+        "inputs": {
+          "alt": ["c7074a7e-40c5-4924-b690-a6d719de0e0e"],
+          "customCss": ["f1607798-b453-4e03-849d-b2afd0670bde"],
+          "url": ["622d8811-0896-4fe8-b2a7-a3ef2a21335c"]
+        }
+      },
+      {
+        "id": "f1607798-b453-4e03-849d-b2afd0670bde",
+        "blockName": "textarea",
+        "value": "position: absolute;\ninset: 0;\nmargin-right: 10px;\nborder-radius: 5px;\nobject-fit: cover;\n",
+        "inputs": {}
+      },
+      {
+        "id": "c7074a7e-40c5-4924-b690-a6d719de0e0e",
+        "blockName": "string",
+        "value": null,
+        "inputs": {}
+      },
+      {
+        "id": "622d8811-0896-4fe8-b2a7-a3ef2a21335c",
+        "blockName": "mediaSelector",
+        "value": "",
+        "inputs": {
+          "name": ["46e02f35-a0a7-4c77-a4ee-4d50eb0d1458"]
+        }
+      },
+      {
+        "id": "46e02f35-a0a7-4c77-a4ee-4d50eb0d1458",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["aa4a6fba-02f1-41fe-b064-ec57b7a24f57"]
+        }
+      },
+      {
+        "id": "aa4a6fba-02f1-41fe-b064-ec57b7a24f57",
+        "blockName": "string",
+        "value": "",
+        "inputs": {}
+      },
+      {
+        "id": "1dd30c78-5dd3-483b-afa0-4d65aeddc566",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "a2de7d6b-30ba-4f10-9651-b8d71254f20c",
+        "blockName": "textarea",
+        "value": "padding: 36px;\ndisplay: flex;\ngap: 16px;\nwidth: fit-content;",
+        "inputs": {}
+      },
+      {
+        "id": "79f3d67d-d7bc-4285-87cd-6ba2a955ce5c",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "f9a7f926-04f5-4228-8993-6f925d9af303",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["e3d0abca-e022-486c-96ae-30510a485f7b"]
+        }
+      },
+      {
+        "id": "e3d0abca-e022-486c-96ae-30510a485f7b",
+        "blockName": "string",
+        "value": "Loading categories...",
+        "inputs": {}
+      }
+    ],
+    "public_components": [
+      {
+        "id": "da82e586-c4c8-4b60-a9e2-6c96df47cd57",
+        "blockName": "Root",
+        "value": null,
+        "inputs": {
+          "children": [
+            "f3e1481b-4bcb-45c1-b923-089ccdd7b772",
+            "8fa013b8-a60a-499b-bb6e-94ce18381d0c",
+            "9a7d98b7-dd2e-4548-be1b-4295b63ce0f7"
+          ]
+        }
+      },
+      {
+        "id": "9a7d98b7-dd2e-4548-be1b-4295b63ce0f7",
+        "blockName": "container",
+        "value": null,
+        "inputs": {
+          "children": ["79a53687-90cb-4da5-bf0f-c95500075bac"],
+          "customCss": ["a0dc8d14-5193-4914-ac35-1bf31b3a1697"],
+          "containerElement": ["3516ce21-6033-4a56-ae2f-8b56924070cc"]
+        }
+      },
+      {
+        "id": "79a53687-90cb-4da5-bf0f-c95500075bac",
+        "blockName": "store",
+        "value": "",
+        "inputs": {
+          "key": ["864995cd-f7ca-4587-ac09-7feb8e581bdd"]
+        }
+      },
+      {
+        "id": "864995cd-f7ca-4587-ac09-7feb8e581bdd",
+        "blockName": "string",
+        "value": "selected-category",
+        "inputs": {}
+      },
+      {
+        "id": "a0dc8d14-5193-4914-ac35-1bf31b3a1697",
+        "blockName": "textarea",
+        "value": null,
+        "inputs": {}
+      },
+      {
+        "id": "3516ce21-6033-4a56-ae2f-8b56924070cc",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "8fa013b8-a60a-499b-bb6e-94ce18381d0c",
+        "blockName": "fetchData",
+        "value": "",
+        "inputs": {
+          "url": ["963e073f-008d-4d76-8168-51c7bdff8662"],
+          "Loading": ["1a3ff28a-566e-45a9-a816-7734c3706ade"],
+          "children": ["8112fe5c-83ab-4c10-889f-cacdc2159cc1"]
+        }
+      },
+      {
+        "id": "963e073f-008d-4d76-8168-51c7bdff8662",
+        "blockName": "add",
+        "value": "",
+        "inputs": {
+          "values": ["2ac944a5-650f-4fc5-a976-876872a42bc7", "4292ab82-ca4b-463a-8d8a-7118d91e2b32"]
+        }
+      },
+      {
+        "id": "4292ab82-ca4b-463a-8d8a-7118d91e2b32",
+        "blockName": "getStore",
+        "value": "",
+        "inputs": {
+          "key": ["3fbbac10-5958-4ac6-a89a-94ce39de2e4c"]
+        }
+      },
+      {
+        "id": "3fbbac10-5958-4ac6-a89a-94ce39de2e4c",
+        "blockName": "string",
+        "value": "selected-category",
+        "inputs": {}
+      },
+      {
+        "id": "2ac944a5-650f-4fc5-a976-876872a42bc7",
+        "blockName": "string",
+        "value": "https://fakestoreapi.com/products/category/",
+        "inputs": {}
+      },
+      {
+        "id": "8112fe5c-83ab-4c10-889f-cacdc2159cc1",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "customCss": ["aac91c64-c063-44e8-af7e-a5bf2c45b21e"],
+          "containerElement": ["6db6b703-0969-4053-a264-6fc4d0e940ce"],
+          "children": ["b8fff59a-0028-4702-9a0e-6d6e5f7fbdb6"]
+        }
+      },
+      {
+        "id": "b8fff59a-0028-4702-9a0e-6d6e5f7fbdb6",
+        "blockName": "reducer",
+        "value": "",
+        "inputs": {
+          "values": ["1e118ee6-b5d5-44ef-9315-ff61b29afd13"],
+          "block": ["839e117d-5f22-4151-b178-3f95eac6f721"]
+        }
+      },
+      {
+        "id": "839e117d-5f22-4151-b178-3f95eac6f721",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "customCss": ["b8648d7e-0f30-4747-9bc3-72d622388a34"],
+          "containerElement": ["48168a01-68f4-457a-987b-5ab1ccbf3e78"],
+          "children": [
+            "349c64ab-bcc5-40a4-a1e2-b4a462258dfb",
+            "ff08aef2-924f-4c71-9b45-5f538773e97e",
+            "cc6f452f-73ba-4cfb-bac5-2d43438fecf4",
+            "6ac8934b-012f-433e-86d9-ed066286a47c"
+          ]
+        }
+      },
+      {
+        "id": "b8648d7e-0f30-4747-9bc3-72d622388a34",
+        "blockName": "textarea",
+        "value": "box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\ntransition: 0.3s;\nborder-radius: 8px;\npadding: 16px;\nheight: 460px;\ndisplay: flex;\nflex-direction: column;\ngap: 8px;",
+        "inputs": {}
+      },
+      {
+        "id": "48168a01-68f4-457a-987b-5ab1ccbf3e78",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "6ac8934b-012f-433e-86d9-ed066286a47c",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "customCss": ["462e9ea7-4704-4a03-958b-205b4f3b5973"],
+          "containerElement": ["8eb9505d-b83e-48e6-9d3b-c257fc4d659a"],
+          "text": ["4269ac63-4d86-480e-bbfd-6e32a5c8fd20"]
+        }
+      },
+      {
+        "id": "8eb9505d-b83e-48e6-9d3b-c257fc4d659a",
+        "blockName": "string",
+        "value": "p",
+        "inputs": {}
+      },
+      {
+        "id": "462e9ea7-4704-4a03-958b-205b4f3b5973",
+        "blockName": "textarea",
+        "value": "font-size: 12px;\ntext-overflow: ellipsis;",
+        "inputs": {}
+      },
+      {
+        "id": "4269ac63-4d86-480e-bbfd-6e32a5c8fd20",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["7418da84-bafa-404b-b7a9-f7d7b14f21eb"]
+        }
+      },
+      {
+        "id": "7418da84-bafa-404b-b7a9-f7d7b14f21eb",
+        "blockName": "string",
+        "value": "description",
+        "inputs": {}
+      },
+      {
+        "id": "cc6f452f-73ba-4cfb-bac5-2d43438fecf4",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["7c106412-c778-4f77-9abf-8b1d3ba93d1b"],
+          "customCss": ["551b9261-fbf1-4472-96ec-738b0981ed34"],
+          "containerElement": ["8d5e705c-505c-42c3-a39c-ee20f44d9eb7"]
+        }
+      },
+      {
+        "id": "8d5e705c-505c-42c3-a39c-ee20f44d9eb7",
+        "blockName": "string",
+        "value": "p",
+        "inputs": {}
+      },
+      {
+        "id": "551b9261-fbf1-4472-96ec-738b0981ed34",
+        "blockName": "textarea",
+        "value": "text-align: center;\nfont-size: 20px;\nfont-weight: bold;",
+        "inputs": {}
+      },
+      {
+        "id": "7c106412-c778-4f77-9abf-8b1d3ba93d1b",
+        "blockName": "add",
+        "value": "",
+        "inputs": {
+          "values": ["8e834602-ed11-495d-a9ec-c22721a74b81", "20d88e69-b5be-4ba7-8722-55c1b92a2198"]
+        }
+      },
+      {
+        "id": "20d88e69-b5be-4ba7-8722-55c1b92a2198",
+        "blockName": "string",
+        "value": "$",
+        "inputs": {}
+      },
+      {
+        "id": "8e834602-ed11-495d-a9ec-c22721a74b81",
+        "blockName": "dataSelector",
+        "value": null,
+        "inputs": {
+          "selector": ["9ab344b7-f46c-449b-9452-c934a6497f9d"]
+        }
+      },
+      {
+        "id": "9ab344b7-f46c-449b-9452-c934a6497f9d",
+        "blockName": "string",
+        "value": "price",
+        "inputs": {}
+      },
+      {
+        "id": "ff08aef2-924f-4c71-9b45-5f538773e97e",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["117657f5-f059-4e52-98ff-e0321a9eaf11"],
+          "containerElement": ["019ea8f1-4ac2-469c-b6cb-5d8668a7f3d1"],
+          "customCss": ["03e27cc3-4e59-4d72-8ee4-4078b1b5b412"]
+        }
+      },
+      {
+        "id": "03e27cc3-4e59-4d72-8ee4-4078b1b5b412",
+        "blockName": "textarea",
+        "value": "padding: 8px 16px;\ntext-align: center;\nfont-weight: 18px;",
+        "inputs": {}
+      },
+      {
+        "id": "117657f5-f059-4e52-98ff-e0321a9eaf11",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["87bdcadf-5151-4c90-9087-3bf02b60b830"]
+        }
+      },
+      {
+        "id": "87bdcadf-5151-4c90-9087-3bf02b60b830",
+        "blockName": "string",
+        "value": "title",
+        "inputs": {}
+      },
+      {
+        "id": "019ea8f1-4ac2-469c-b6cb-5d8668a7f3d1",
+        "blockName": "string",
+        "value": "p",
+        "inputs": {}
+      },
+      {
+        "id": "349c64ab-bcc5-40a4-a1e2-b4a462258dfb",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "containerElement": ["5c0bef6e-4036-49e6-be1d-5c0fb4258270"],
+          "customCss": ["919330d1-27ff-45d8-9ed0-e342f0dc8d5d"],
+          "children": ["1168a0ee-f496-4ec6-bc04-f831a87fe76d"]
+        }
+      },
+      {
+        "id": "919330d1-27ff-45d8-9ed0-e342f0dc8d5d",
+        "blockName": "textarea",
+        "value": "height: 240px;",
+        "inputs": {}
+      },
+      {
+        "id": "1168a0ee-f496-4ec6-bc04-f831a87fe76d",
+        "blockName": "image",
+        "value": "",
+        "inputs": {
+          "alt": ["e0a183cb-6ef7-4757-bb7b-61c79fd00622"],
+          "customCss": ["afd627db-4ba6-4dd2-bb54-9c4804766849"],
+          "url": ["afd627db-4ba6-4dd2-bb54-9c48047668a1"]
+        }
+      },
+      {
+        "id": "afd627db-4ba6-4dd2-bb54-9c4804766849",
+        "blockName": "Root",
+        "value": null,
+        "inputs": {
+          "children": []
+        }
+      },
+      {
+        "id": "afd627db-4ba6-4dd2-bb54-9c48047668a1",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["e8680c7c-9bc5-47eb-96d5-0a3d3a6afb9f"]
+        }
+      },
+      {
+        "id": "e8680c7c-9bc5-47eb-96d5-0a3d3a6afb9f",
+        "blockName": "string",
+        "value": "image",
+        "inputs": {}
+      },
+      {
+        "id": "e0a183cb-6ef7-4757-bb7b-61c79fd00622",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["046d8391-43b2-424c-84d5-4390bde42584"]
+        }
+      },
+      {
+        "id": "046d8391-43b2-424c-84d5-4390bde42584",
+        "blockName": "string",
+        "value": "title",
+        "inputs": {}
+      },
+      {
+        "id": "5c0bef6e-4036-49e6-be1d-5c0fb4258270",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "1e118ee6-b5d5-44ef-9315-ff61b29afd13",
+        "blockName": "dataSelector",
+        "value": null,
+        "inputs": {
+          "selector": ["537dcd3b-484c-4a8d-b1d5-6d27bd82da2a"]
+        }
+      },
+      {
+        "id": "537dcd3b-484c-4a8d-b1d5-6d27bd82da2a",
+        "blockName": "string",
+        "value": "title",
+        "inputs": {}
+      },
+      {
+        "id": "6db6b703-0969-4053-a264-6fc4d0e940ce",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "aac91c64-c063-44e8-af7e-a5bf2c45b21e",
+        "blockName": "textarea",
+        "value": "display: grid;\ngap: 12px;\ngrid-template-columns: repeat(auto-fit, minmax(150px, 300px) );\npadding: 36px;\n\n@media screen and (max-width: 600px) {\n   & {\n      padding: 36px 0px;\n      justify-content: center;\n   }\n }",
+        "inputs": {}
+      },
+      {
+        "id": "1a3ff28a-566e-45a9-a816-7734c3706ade",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["6c5975db-6f70-4d57-84ce-4a42cb220222"]
+        }
+      },
+      {
+        "id": "6c5975db-6f70-4d57-84ce-4a42cb220222",
+        "blockName": "string",
+        "value": "Loading...",
+        "inputs": {}
+      },
+      {
+        "id": "f3e1481b-4bcb-45c1-b923-089ccdd7b772",
+        "blockName": "fetchData",
+        "value": "",
+        "inputs": {
+          "url": ["838d9afb-61ac-41b2-bd70-001dea68bdf8"],
+          "Loading": ["f9a7f926-04f5-4228-8993-6f925d9af303"],
+          "children": ["92b17b16-631f-424e-a039-5c6dcdb8c44d"]
+        }
+      },
+      {
+        "id": "838d9afb-61ac-41b2-bd70-001dea68bdf8",
+        "blockName": "string",
+        "value": "https://fakestoreapi.com/products/categories",
+        "inputs": {}
+      },
+      {
+        "id": "92b17b16-631f-424e-a039-5c6dcdb8c44d",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "containerElement": ["79f3d67d-d7bc-4285-87cd-6ba2a955ce5c"],
+          "children": ["6a5d1a9b-412e-44ef-ad6a-7d80b08787b5"],
+          "customCss": ["881d9135-a318-40dd-9f03-1f02261c94d5"]
+        }
+      },
+      {
+        "id": "881d9135-a318-40dd-9f03-1f02261c94d5",
+        "blockName": "textarea",
+        "value": "width: 100%;\noverflow-x: auto;\n\n@media screen and (max-width: 600px) {\n   & {\n      box-shadow: 5px 0 5px -5px #333;\n   }\n }",
+        "inputs": {}
+      },
+      {
+        "id": "6a5d1a9b-412e-44ef-ad6a-7d80b08787b5",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "customCss": ["a2de7d6b-30ba-4f10-9651-b8d71254f20c"],
+          "containerElement": ["1dd30c78-5dd3-483b-afa0-4d65aeddc566"],
+          "children": ["6cdcc45f-c6f0-44b8-b547-4665a1c4fe10"]
+        }
+      },
+      {
+        "id": "6cdcc45f-c6f0-44b8-b547-4665a1c4fe10",
+        "blockName": "reducer",
+        "value": "",
+        "inputs": {
+          "block": ["a0eb9b8c-da49-4006-9e84-f136ae0784b3"],
+          "values": ["aa350612-07e3-465c-bd83-5faa529d9649"]
+        }
+      },
+      {
+        "id": "aa350612-07e3-465c-bd83-5faa529d9649",
+        "blockName": "dataSelector",
+        "value": null,
+        "inputs": {
+          "selector": ["d9a2c719-9329-44c7-8623-5afab1c90070"]
+        }
+      },
+      {
+        "id": "d9a2c719-9329-44c7-8623-5afab1c90070",
+        "blockName": "string",
+        "value": "",
+        "inputs": {}
+      },
+      {
+        "id": "a0eb9b8c-da49-4006-9e84-f136ae0784b3",
+        "blockName": "button",
+        "value": "",
+        "inputs": {
+          "onClick": ["a91ee1ff-6c81-40a9-9a2a-30ef54212779"],
+          "customCss": ["55e7936e-d579-48ac-8b68-06bd4a373db1"],
+          "children": ["c6a7c68c-e56b-402b-87e7-cfc8adbaf63d", "3508cfeb-9caf-48ce-a1a1-1b769e3d83db"]
+        }
+      },
+      {
+        "id": "55e7936e-d579-48ac-8b68-06bd4a373db1",
+        "blockName": "textarea",
+        "value": "width: 300px;\nheight: 200px;\nposition: relative;\nborder: none;\ncolor: black;\ntext-align: center;\ntext-decoration: none;\nfont-size: 20px;\ncursor: pointer;\nborder-radius: 8px;\npadding: 12px 30px;\ntransition-duration: 0.4s;\nbox-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\nposition: relative;\noverflow: hidden;\ntex-transform: capitalize;\n\n&:hover {\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);\n  transform: translateY(-3px);\n}",
+        "inputs": {}
+      },
+      {
+        "id": "a91ee1ff-6c81-40a9-9a2a-30ef54212779",
+        "blockName": "setStore",
+        "value": "",
+        "inputs": {
+          "key": ["4eb91c82-d76e-4933-8b69-836d7e62fdec"],
+          "value": ["ce9413ac-c591-4d41-bead-55505d082690"]
+        }
+      },
+      {
+        "id": "4eb91c82-d76e-4933-8b69-836d7e62fdec",
+        "blockName": "string",
+        "value": "selected-category",
+        "inputs": {}
+      },
+      {
+        "id": "ce9413ac-c591-4d41-bead-55505d082690",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["a8664540-7103-481a-81ca-9f881240d667"]
+        }
+      },
+      {
+        "id": "a8664540-7103-481a-81ca-9f881240d667",
+        "blockName": "string",
+        "value": "",
+        "inputs": {}
+      },
+      {
+        "id": "3508cfeb-9caf-48ce-a1a1-1b769e3d83db",
+        "blockName": "container",
+        "value": "",
+        "inputs": {
+          "containerElement": ["d021f1f8-8ae8-4b87-b5dd-923f0e3871d6"],
+          "children": ["5efa00d6-d471-4047-8312-912236435d1a"],
+          "customCss": ["b2ce806f-5f00-47b8-a4ac-a2ba17d44c83"]
+        }
+      },
+      {
+        "id": "b2ce806f-5f00-47b8-a4ac-a2ba17d44c83",
+        "blockName": "textarea",
+        "value": "position: absolute;\ninset: 0;\ncolor: white;\nbackdrop-filter: brightness(75%);\ndisplay: flex;\njustify-content: center;\nalign-items: center;",
+        "inputs": {}
+      },
+      {
+        "id": "5efa00d6-d471-4047-8312-912236435d1a",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["493f9b1d-5154-4847-bb18-5209010483f0"]
+        }
+      },
+      {
+        "id": "493f9b1d-5154-4847-bb18-5209010483f0",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["0c728fdc-6a11-45c5-8509-918744f0507c"]
+        }
+      },
+      {
+        "id": "0c728fdc-6a11-45c5-8509-918744f0507c",
+        "blockName": "string",
+        "value": "",
+        "inputs": {}
+      },
+      {
+        "id": "d021f1f8-8ae8-4b87-b5dd-923f0e3871d6",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "c6a7c68c-e56b-402b-87e7-cfc8adbaf63d",
+        "blockName": "image",
+        "value": "",
+        "inputs": {
+          "customCss": ["f1607798-b453-4e03-849d-b2afd0670bde"],
+          "alt": ["c7074a7e-40c5-4924-b690-a6d719de0e0e"],
+          "url": ["622d8811-0896-4fe8-b2a7-a3ef2a21335c"]
+        }
+      },
+      {
+        "id": "f1607798-b453-4e03-849d-b2afd0670bde",
+        "blockName": "textarea",
+        "value": "position: absolute;\ninset: 0;\nmargin-right: 10px;\nborder-radius: 5px;\nobject-fit: cover;\n",
+        "inputs": {}
+      },
+      {
+        "id": "c7074a7e-40c5-4924-b690-a6d719de0e0e",
+        "blockName": "string",
+        "value": null,
+        "inputs": {}
+      },
+      {
+        "id": "622d8811-0896-4fe8-b2a7-a3ef2a21335c",
+        "blockName": "mediaSelector",
+        "value": "",
+        "inputs": {
+          "name": ["46e02f35-a0a7-4c77-a4ee-4d50eb0d1458"]
+        }
+      },
+      {
+        "id": "46e02f35-a0a7-4c77-a4ee-4d50eb0d1458",
+        "blockName": "dataSelector",
+        "value": "",
+        "inputs": {
+          "selector": ["aa4a6fba-02f1-41fe-b064-ec57b7a24f57"]
+        }
+      },
+      {
+        "id": "aa4a6fba-02f1-41fe-b064-ec57b7a24f57",
+        "blockName": "string",
+        "value": "",
+        "inputs": {}
+      },
+      {
+        "id": "1dd30c78-5dd3-483b-afa0-4d65aeddc566",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "a2de7d6b-30ba-4f10-9651-b8d71254f20c",
+        "blockName": "textarea",
+        "value": "padding: 36px;\ndisplay: flex;\ngap: 16px;\nwidth: fit-content;",
+        "inputs": {}
+      },
+      {
+        "id": "79f3d67d-d7bc-4285-87cd-6ba2a955ce5c",
+        "blockName": "string",
+        "value": "div",
+        "inputs": {}
+      },
+      {
+        "id": "f9a7f926-04f5-4228-8993-6f925d9af303",
+        "blockName": "textBlock",
+        "value": "",
+        "inputs": {
+          "text": ["e3d0abca-e022-486c-96ae-30510a485f7b"]
+        }
+      },
+      {
+        "id": "e3d0abca-e022-486c-96ae-30510a485f7b",
+        "blockName": "string",
+        "value": "Loading categories...",
+        "inputs": {}
+      }
+    ]
   },
-  "user_id": {
-    "$oid": "644cef90f9a388bd95bb85cd"
-  },
-  "created_at": {
-    "$date": "2023-04-29T10:21:21.158Z"
-  },
-  "description": "My First Page",
-  "components": [
-    {
-      "id": "5673cce1-58be-4b56-81b9-fc43a22dcb4e",
-      "blockName": "Root",
-      "value": null,
-      "inputs": {
-        "children": [
-          "1367aee5-604f-4827-b869-dc39de13f98a",
-          "de14c4b7-ff8f-4dce-bc76-faaf64f16e8b"
-        ]
-      }
-    },
-    {
-      "id": "de14c4b7-ff8f-4dce-bc76-faaf64f16e8b",
-      "blockName": "image",
-      "value": "",
-      "inputs": {
-        "url": [
-          "3c47929e-195a-4d4b-a2d7-636bcd32b23a"
-        ],
-        "alt": [
-          "09311eb1-f471-447c-8b2e-db9e724f6efb"
-        ]
-      }
-    },
-    {
-      "id": "09311eb1-f471-447c-8b2e-db9e724f6efb",
-      "blockName": "string",
-      "value": null,
-      "inputs": {}
-    },
-    {
-      "id": "3c47929e-195a-4d4b-a2d7-636bcd32b23a",
-      "blockName": "string",
-      "value": null,
-      "inputs": {}
-    },
-    {
-      "id": "1367aee5-604f-4827-b869-dc39de13f98a",
-      "blockName": "container",
-      "value": null,
-      "inputs": {
-        "containerElement": [
-          "a7df96a5-109c-4926-b7ba-ac6945ae7df0"
-        ],
-        "customCss": [
-          "838b52e6-76b1-4aac-a42e-afec779fe801"
-        ],
-        "children": [
-          "aec460e9-2b87-44e5-a889-fc7a63f6b4fd"
-        ]
-      }
-    },
-    {
-      "id": "838b52e6-76b1-4aac-a42e-afec779fe801",
-      "blockName": "textarea",
-      "value": null,
-      "inputs": {}
-    },
-    {
-      "id": "aec460e9-2b87-44e5-a889-fc7a63f6b4fd",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "fb4c1686-f238-48fa-9f48-118e44aebe9f"
-        ]
-      }
-    },
-    {
-      "id": "fb4c1686-f238-48fa-9f48-118e44aebe9f",
-      "blockName": "string",
-      "value": "Demo",
-      "inputs": {}
-    },
-    {
-      "id": "a7df96a5-109c-4926-b7ba-ac6945ae7df0",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    }
-  ],
-  "public_components": [
-    {
-      "id": "5673cce1-58be-4b56-81b9-fc43a22dcb4e",
-      "blockName": "Root",
-      "value": null,
-      "inputs": {
-        "children": [
-          "1367aee5-604f-4827-b869-dc39de13f98a"
-        ]
-      }
-    },
-    {
-      "id": "1367aee5-604f-4827-b869-dc39de13f98a",
-      "blockName": "container",
-      "value": null,
-      "inputs": {
-        "children": [
-          "aec460e9-2b87-44e5-a889-fc7a63f6b4fd"
-        ],
-        "customCss": [
-          "838b52e6-76b1-4aac-a42e-afec779fe801"
-        ],
-        "containerElement": [
-          "a7df96a5-109c-4926-b7ba-ac6945ae7df0"
-        ]
-      }
-    },
-    {
-      "id": "aec460e9-2b87-44e5-a889-fc7a63f6b4fd",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "fb4c1686-f238-48fa-9f48-118e44aebe9f"
-        ]
-      }
-    },
-    {
-      "id": "fb4c1686-f238-48fa-9f48-118e44aebe9f",
-      "blockName": "string",
-      "value": "Demo",
-      "inputs": {}
-    },
-    {
-      "id": "a7df96a5-109c-4926-b7ba-ac6945ae7df0",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "838b52e6-76b1-4aac-a42e-afec779fe801",
-      "blockName": "textarea",
-      "value": null,
-      "inputs": {}
-    }
-  ]
-},{
-  "_id": {
-    "$binary": {
-      "base64": "aq8CkFb0TcWBliatShDNwg==",
-      "subType": "04"
-    }
-  },
-  "pageName": "MyFirstPage From prod",
-  "rootId": {
-    "$binary": {
-      "base64": "2oLlhsTIS2Cp4myW30fNVw==",
-      "subType": "04"
-    }
-  },
-  "user_id": {
-    "$oid": "644cef90f9a388bd95bb85cd"
-  },
-  "created_at": {
-    "$date": "2023-04-29T17:20:10.246Z"
-  },
-  "description": "The First Page",
-  "components": [
-    {
-      "id": "da82e586-c4c8-4b60-a9e2-6c96df47cd57",
-      "blockName": "Root",
-      "value": null,
-      "inputs": {
-        "children": [
-          "f3e1481b-4bcb-45c1-b923-089ccdd7b772",
-          "8fa013b8-a60a-499b-bb6e-94ce18381d0c",
-          "9a7d98b7-dd2e-4548-be1b-4295b63ce0f7"
-        ]
-      }
-    },
-    {
-      "id": "9a7d98b7-dd2e-4548-be1b-4295b63ce0f7",
-      "blockName": "container",
-      "value": null,
-      "inputs": {
-        "children": [
-          "79a53687-90cb-4da5-bf0f-c95500075bac"
-        ],
-        "containerElement": [
-          "3516ce21-6033-4a56-ae2f-8b56924070cc"
-        ],
-        "customCss": [
-          "a0dc8d14-5193-4914-ac35-1bf31b3a1697"
-        ]
-      }
-    },
-    {
-      "id": "79a53687-90cb-4da5-bf0f-c95500075bac",
-      "blockName": "store",
-      "value": "",
-      "inputs": {
-        "key": [
-          "864995cd-f7ca-4587-ac09-7feb8e581bdd"
-        ]
-      }
-    },
-    {
-      "id": "864995cd-f7ca-4587-ac09-7feb8e581bdd",
-      "blockName": "string",
-      "value": "selected-category",
-      "inputs": {}
-    },
-    {
-      "id": "a0dc8d14-5193-4914-ac35-1bf31b3a1697",
-      "blockName": "textarea",
-      "value": null,
-      "inputs": {}
-    },
-    {
-      "id": "3516ce21-6033-4a56-ae2f-8b56924070cc",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "8fa013b8-a60a-499b-bb6e-94ce18381d0c",
-      "blockName": "fetchData",
-      "value": "",
-      "inputs": {
-        "children": [
-          "8112fe5c-83ab-4c10-889f-cacdc2159cc1"
-        ],
-        "url": [
-          "963e073f-008d-4d76-8168-51c7bdff8662"
-        ],
-        "Loading": [
-          "1a3ff28a-566e-45a9-a816-7734c3706ade"
-        ]
-      }
-    },
-    {
-      "id": "963e073f-008d-4d76-8168-51c7bdff8662",
-      "blockName": "add",
-      "value": "",
-      "inputs": {
-        "values": [
-          "2ac944a5-650f-4fc5-a976-876872a42bc7",
-          "4292ab82-ca4b-463a-8d8a-7118d91e2b32"
-        ]
-      }
-    },
-    {
-      "id": "4292ab82-ca4b-463a-8d8a-7118d91e2b32",
-      "blockName": "getStore",
-      "value": "",
-      "inputs": {
-        "key": [
-          "3fbbac10-5958-4ac6-a89a-94ce39de2e4c"
-        ]
-      }
-    },
-    {
-      "id": "3fbbac10-5958-4ac6-a89a-94ce39de2e4c",
-      "blockName": "string",
-      "value": "selected-category",
-      "inputs": {}
-    },
-    {
-      "id": "2ac944a5-650f-4fc5-a976-876872a42bc7",
-      "blockName": "string",
-      "value": "https://fakestoreapi.com/products/category/",
-      "inputs": {}
-    },
-    {
-      "id": "8112fe5c-83ab-4c10-889f-cacdc2159cc1",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "aac91c64-c063-44e8-af7e-a5bf2c45b21e"
-        ],
-        "containerElement": [
-          "6db6b703-0969-4053-a264-6fc4d0e940ce"
-        ],
-        "children": [
-          "b8fff59a-0028-4702-9a0e-6d6e5f7fbdb6"
-        ]
-      }
-    },
-    {
-      "id": "b8fff59a-0028-4702-9a0e-6d6e5f7fbdb6",
-      "blockName": "reducer",
-      "value": "",
-      "inputs": {
-        "values": [
-          "1e118ee6-b5d5-44ef-9315-ff61b29afd13"
-        ],
-        "block": [
-          "839e117d-5f22-4151-b178-3f95eac6f721"
-        ]
-      }
-    },
-    {
-      "id": "839e117d-5f22-4151-b178-3f95eac6f721",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "children": [
-          "349c64ab-bcc5-40a4-a1e2-b4a462258dfb",
-          "ff08aef2-924f-4c71-9b45-5f538773e97e",
-          "cc6f452f-73ba-4cfb-bac5-2d43438fecf4",
-          "6ac8934b-012f-433e-86d9-ed066286a47c"
-        ],
-        "containerElement": [
-          "48168a01-68f4-457a-987b-5ab1ccbf3e78"
-        ],
-        "customCss": [
-          "b8648d7e-0f30-4747-9bc3-72d622388a34"
-        ]
-      }
-    },
-    {
-      "id": "b8648d7e-0f30-4747-9bc3-72d622388a34",
-      "blockName": "textarea",
-      "value": "box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\ntransition: 0.3s;\nborder-radius: 8px;\npadding: 16px;\nheight: 460px;\ndisplay: flex;\nflex-direction: column;\ngap: 8px;",
-      "inputs": {}
-    },
-    {
-      "id": "48168a01-68f4-457a-987b-5ab1ccbf3e78",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "6ac8934b-012f-433e-86d9-ed066286a47c",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "462e9ea7-4704-4a03-958b-205b4f3b5973"
-        ],
-        "containerElement": [
-          "8eb9505d-b83e-48e6-9d3b-c257fc4d659a"
-        ],
-        "text": [
-          "4269ac63-4d86-480e-bbfd-6e32a5c8fd20"
-        ]
-      }
-    },
-    {
-      "id": "8eb9505d-b83e-48e6-9d3b-c257fc4d659a",
-      "blockName": "string",
-      "value": "p",
-      "inputs": {}
-    },
-    {
-      "id": "462e9ea7-4704-4a03-958b-205b4f3b5973",
-      "blockName": "textarea",
-      "value": "font-size: 12px;\ntext-overflow: ellipsis;",
-      "inputs": {}
-    },
-    {
-      "id": "4269ac63-4d86-480e-bbfd-6e32a5c8fd20",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "7418da84-bafa-404b-b7a9-f7d7b14f21eb"
-        ]
-      }
-    },
-    {
-      "id": "7418da84-bafa-404b-b7a9-f7d7b14f21eb",
-      "blockName": "string",
-      "value": "description",
-      "inputs": {}
-    },
-    {
-      "id": "cc6f452f-73ba-4cfb-bac5-2d43438fecf4",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "7c106412-c778-4f77-9abf-8b1d3ba93d1b"
-        ],
-        "customCss": [
-          "551b9261-fbf1-4472-96ec-738b0981ed34"
-        ],
-        "containerElement": [
-          "8d5e705c-505c-42c3-a39c-ee20f44d9eb7"
-        ]
-      }
-    },
-    {
-      "id": "8d5e705c-505c-42c3-a39c-ee20f44d9eb7",
-      "blockName": "string",
-      "value": "p",
-      "inputs": {}
-    },
-    {
-      "id": "551b9261-fbf1-4472-96ec-738b0981ed34",
-      "blockName": "textarea",
-      "value": "text-align: center;\nfont-size: 20px;\nfont-weight: bold;",
-      "inputs": {}
-    },
-    {
-      "id": "7c106412-c778-4f77-9abf-8b1d3ba93d1b",
-      "blockName": "add",
-      "value": "",
-      "inputs": {
-        "values": [
-          "8e834602-ed11-495d-a9ec-c22721a74b81",
-          "20d88e69-b5be-4ba7-8722-55c1b92a2198"
-        ]
-      }
-    },
-    {
-      "id": "20d88e69-b5be-4ba7-8722-55c1b92a2198",
-      "blockName": "string",
-      "value": "$",
-      "inputs": {}
-    },
-    {
-      "id": "8e834602-ed11-495d-a9ec-c22721a74b81",
-      "blockName": "dataSelector",
-      "value": null,
-      "inputs": {
-        "selector": [
-          "9ab344b7-f46c-449b-9452-c934a6497f9d"
-        ]
-      }
-    },
-    {
-      "id": "9ab344b7-f46c-449b-9452-c934a6497f9d",
-      "blockName": "string",
-      "value": "price",
-      "inputs": {}
-    },
-    {
-      "id": "ff08aef2-924f-4c71-9b45-5f538773e97e",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "117657f5-f059-4e52-98ff-e0321a9eaf11"
-        ],
-        "customCss": [
-          "03e27cc3-4e59-4d72-8ee4-4078b1b5b412"
-        ],
-        "containerElement": [
-          "019ea8f1-4ac2-469c-b6cb-5d8668a7f3d1"
-        ]
-      }
-    },
-    {
-      "id": "03e27cc3-4e59-4d72-8ee4-4078b1b5b412",
-      "blockName": "textarea",
-      "value": "padding: 8px 16px;\ntext-align: center;\nfont-weight: 18px;",
-      "inputs": {}
-    },
-    {
-      "id": "117657f5-f059-4e52-98ff-e0321a9eaf11",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "87bdcadf-5151-4c90-9087-3bf02b60b830"
-        ]
-      }
-    },
-    {
-      "id": "87bdcadf-5151-4c90-9087-3bf02b60b830",
-      "blockName": "string",
-      "value": "title",
-      "inputs": {}
-    },
-    {
-      "id": "019ea8f1-4ac2-469c-b6cb-5d8668a7f3d1",
-      "blockName": "string",
-      "value": "p",
-      "inputs": {}
-    },
-    {
-      "id": "349c64ab-bcc5-40a4-a1e2-b4a462258dfb",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "919330d1-27ff-45d8-9ed0-e342f0dc8d5d"
-        ],
-        "children": [
-          "1168a0ee-f496-4ec6-bc04-f831a87fe76d"
-        ],
-        "containerElement": [
-          "5c0bef6e-4036-49e6-be1d-5c0fb4258270"
-        ]
-      }
-    },
-    {
-      "id": "919330d1-27ff-45d8-9ed0-e342f0dc8d5d",
-      "blockName": "textarea",
-      "value": "height: 240px;",
-      "inputs": {}
-    },
-    {
-      "id": "1168a0ee-f496-4ec6-bc04-f831a87fe76d",
-      "blockName": "image",
-      "value": "",
-      "inputs": {
-        "alt": [
-          "e0a183cb-6ef7-4757-bb7b-61c79fd00622"
-        ],
-        "customCss": [
-          "afd627db-4ba6-4dd2-bb54-9c4804766849"
-        ],
-        "url": [
-          "afd627db-4ba6-4dd2-bb54-9c48047668a1"
-        ]
-      }
-    },
-    {
-      "id": "afd627db-4ba6-4dd2-bb54-9c4804766849",
-      "blockName": "Root",
-      "value": null,
-      "inputs": {
-        "children": []
-      }
-    },
-    {
-      "id": "afd627db-4ba6-4dd2-bb54-9c48047668a1",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "e8680c7c-9bc5-47eb-96d5-0a3d3a6afb9f"
-        ]
-      }
-    },
-    {
-      "id": "e8680c7c-9bc5-47eb-96d5-0a3d3a6afb9f",
-      "blockName": "string",
-      "value": "image",
-      "inputs": {}
-    },
-    {
-      "id": "e0a183cb-6ef7-4757-bb7b-61c79fd00622",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "046d8391-43b2-424c-84d5-4390bde42584"
-        ]
-      }
-    },
-    {
-      "id": "046d8391-43b2-424c-84d5-4390bde42584",
-      "blockName": "string",
-      "value": "title",
-      "inputs": {}
-    },
-    {
-      "id": "5c0bef6e-4036-49e6-be1d-5c0fb4258270",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "1e118ee6-b5d5-44ef-9315-ff61b29afd13",
-      "blockName": "dataSelector",
-      "value": null,
-      "inputs": {
-        "selector": [
-          "537dcd3b-484c-4a8d-b1d5-6d27bd82da2a"
-        ]
-      }
-    },
-    {
-      "id": "537dcd3b-484c-4a8d-b1d5-6d27bd82da2a",
-      "blockName": "string",
-      "value": "title",
-      "inputs": {}
-    },
-    {
-      "id": "6db6b703-0969-4053-a264-6fc4d0e940ce",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "aac91c64-c063-44e8-af7e-a5bf2c45b21e",
-      "blockName": "textarea",
-      "value": "display: grid;\ngap: 12px;\ngrid-template-columns: repeat(auto-fit, minmax(150px, 300px) );\npadding: 36px;\n\n@media screen and (max-width: 600px) {\n   & {\n      padding: 36px 0px;\n      justify-content: center;\n   }\n }",
-      "inputs": {}
-    },
-    {
-      "id": "1a3ff28a-566e-45a9-a816-7734c3706ade",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "6c5975db-6f70-4d57-84ce-4a42cb220222"
-        ]
-      }
-    },
-    {
-      "id": "6c5975db-6f70-4d57-84ce-4a42cb220222",
-      "blockName": "string",
-      "value": "Loading...",
-      "inputs": {}
-    },
-    {
-      "id": "f3e1481b-4bcb-45c1-b923-089ccdd7b772",
-      "blockName": "fetchData",
-      "value": "",
-      "inputs": {
-        "url": [
-          "838d9afb-61ac-41b2-bd70-001dea68bdf8"
-        ],
-        "children": [
-          "92b17b16-631f-424e-a039-5c6dcdb8c44d"
-        ],
-        "Loading": [
-          "f9a7f926-04f5-4228-8993-6f925d9af303"
-        ]
-      }
-    },
-    {
-      "id": "838d9afb-61ac-41b2-bd70-001dea68bdf8",
-      "blockName": "string",
-      "value": "https://fakestoreapi.com/products/categories",
-      "inputs": {}
-    },
-    {
-      "id": "92b17b16-631f-424e-a039-5c6dcdb8c44d",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "containerElement": [
-          "79f3d67d-d7bc-4285-87cd-6ba2a955ce5c"
-        ],
-        "children": [
-          "6a5d1a9b-412e-44ef-ad6a-7d80b08787b5"
-        ],
-        "customCss": [
-          "881d9135-a318-40dd-9f03-1f02261c94d5"
-        ]
-      }
-    },
-    {
-      "id": "881d9135-a318-40dd-9f03-1f02261c94d5",
-      "blockName": "textarea",
-      "value": "width: 100%;\noverflow-x: auto;\n\n@media screen and (max-width: 600px) {\n   & {\n      box-shadow: 5px 0 5px -5px #333;\n   }\n }",
-      "inputs": {}
-    },
-    {
-      "id": "6a5d1a9b-412e-44ef-ad6a-7d80b08787b5",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "a2de7d6b-30ba-4f10-9651-b8d71254f20c"
-        ],
-        "containerElement": [
-          "1dd30c78-5dd3-483b-afa0-4d65aeddc566"
-        ],
-        "children": [
-          "6cdcc45f-c6f0-44b8-b547-4665a1c4fe10"
-        ]
-      }
-    },
-    {
-      "id": "6cdcc45f-c6f0-44b8-b547-4665a1c4fe10",
-      "blockName": "reducer",
-      "value": "",
-      "inputs": {
-        "block": [
-          "a0eb9b8c-da49-4006-9e84-f136ae0784b3"
-        ],
-        "values": [
-          "aa350612-07e3-465c-bd83-5faa529d9649"
-        ]
-      }
-    },
-    {
-      "id": "aa350612-07e3-465c-bd83-5faa529d9649",
-      "blockName": "dataSelector",
-      "value": null,
-      "inputs": {
-        "selector": [
-          "d9a2c719-9329-44c7-8623-5afab1c90070"
-        ]
-      }
-    },
-    {
-      "id": "d9a2c719-9329-44c7-8623-5afab1c90070",
-      "blockName": "string",
-      "value": "",
-      "inputs": {}
-    },
-    {
-      "id": "a0eb9b8c-da49-4006-9e84-f136ae0784b3",
-      "blockName": "button",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "55e7936e-d579-48ac-8b68-06bd4a373db1"
-        ],
-        "onClick": [
-          "a91ee1ff-6c81-40a9-9a2a-30ef54212779"
-        ],
-        "children": [
-          "c6a7c68c-e56b-402b-87e7-cfc8adbaf63d",
-          "3508cfeb-9caf-48ce-a1a1-1b769e3d83db"
-        ]
-      }
-    },
-    {
-      "id": "55e7936e-d579-48ac-8b68-06bd4a373db1",
-      "blockName": "textarea",
-      "value": "width: 300px;\nheight: 200px;\nposition: relative;\nborder: none;\ncolor: black;\ntext-align: center;\ntext-decoration: none;\nfont-size: 20px;\ncursor: pointer;\nborder-radius: 8px;\npadding: 12px 30px;\ntransition-duration: 0.4s;\nbox-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\nposition: relative;\noverflow: hidden;\ntex-transform: capitalize;\n\n&:hover {\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);\n  transform: translateY(-3px);\n}",
-      "inputs": {}
-    },
-    {
-      "id": "a91ee1ff-6c81-40a9-9a2a-30ef54212779",
-      "blockName": "setStore",
-      "value": "",
-      "inputs": {
-        "key": [
-          "4eb91c82-d76e-4933-8b69-836d7e62fdec"
-        ],
-        "value": [
-          "ce9413ac-c591-4d41-bead-55505d082690"
-        ]
-      }
-    },
-    {
-      "id": "4eb91c82-d76e-4933-8b69-836d7e62fdec",
-      "blockName": "string",
-      "value": "selected-category",
-      "inputs": {}
-    },
-    {
-      "id": "ce9413ac-c591-4d41-bead-55505d082690",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "a8664540-7103-481a-81ca-9f881240d667"
-        ]
-      }
-    },
-    {
-      "id": "a8664540-7103-481a-81ca-9f881240d667",
-      "blockName": "string",
-      "value": "",
-      "inputs": {}
-    },
-    {
-      "id": "3508cfeb-9caf-48ce-a1a1-1b769e3d83db",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "b2ce806f-5f00-47b8-a4ac-a2ba17d44c83"
-        ],
-        "containerElement": [
-          "d021f1f8-8ae8-4b87-b5dd-923f0e3871d6"
-        ],
-        "children": [
-          "5efa00d6-d471-4047-8312-912236435d1a"
-        ]
-      }
-    },
-    {
-      "id": "b2ce806f-5f00-47b8-a4ac-a2ba17d44c83",
-      "blockName": "textarea",
-      "value": "position: absolute;\ninset: 0;\ncolor: white;\nbackdrop-filter: brightness(75%);\ndisplay: flex;\njustify-content: center;\nalign-items: center;",
-      "inputs": {}
-    },
-    {
-      "id": "5efa00d6-d471-4047-8312-912236435d1a",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "493f9b1d-5154-4847-bb18-5209010483f0"
-        ]
-      }
-    },
-    {
-      "id": "493f9b1d-5154-4847-bb18-5209010483f0",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "0c728fdc-6a11-45c5-8509-918744f0507c"
-        ]
-      }
-    },
-    {
-      "id": "0c728fdc-6a11-45c5-8509-918744f0507c",
-      "blockName": "string",
-      "value": "",
-      "inputs": {}
-    },
-    {
-      "id": "d021f1f8-8ae8-4b87-b5dd-923f0e3871d6",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "c6a7c68c-e56b-402b-87e7-cfc8adbaf63d",
-      "blockName": "image",
-      "value": "",
-      "inputs": {
-        "alt": [
-          "c7074a7e-40c5-4924-b690-a6d719de0e0e"
-        ],
-        "customCss": [
-          "f1607798-b453-4e03-849d-b2afd0670bde"
-        ],
-        "url": [
-          "622d8811-0896-4fe8-b2a7-a3ef2a21335c"
-        ]
-      }
-    },
-    {
-      "id": "f1607798-b453-4e03-849d-b2afd0670bde",
-      "blockName": "textarea",
-      "value": "position: absolute;\ninset: 0;\nmargin-right: 10px;\nborder-radius: 5px;\nobject-fit: cover;\n",
-      "inputs": {}
-    },
-    {
-      "id": "c7074a7e-40c5-4924-b690-a6d719de0e0e",
-      "blockName": "string",
-      "value": null,
-      "inputs": {}
-    },
-    {
-      "id": "622d8811-0896-4fe8-b2a7-a3ef2a21335c",
-      "blockName": "mediaSelector",
-      "value": "",
-      "inputs": {
-        "name": [
-          "46e02f35-a0a7-4c77-a4ee-4d50eb0d1458"
-        ]
-      }
-    },
-    {
-      "id": "46e02f35-a0a7-4c77-a4ee-4d50eb0d1458",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "aa4a6fba-02f1-41fe-b064-ec57b7a24f57"
-        ]
-      }
-    },
-    {
-      "id": "aa4a6fba-02f1-41fe-b064-ec57b7a24f57",
-      "blockName": "string",
-      "value": "",
-      "inputs": {}
-    },
-    {
-      "id": "1dd30c78-5dd3-483b-afa0-4d65aeddc566",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "a2de7d6b-30ba-4f10-9651-b8d71254f20c",
-      "blockName": "textarea",
-      "value": "padding: 36px;\ndisplay: flex;\ngap: 16px;\nwidth: fit-content;",
-      "inputs": {}
-    },
-    {
-      "id": "79f3d67d-d7bc-4285-87cd-6ba2a955ce5c",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "f9a7f926-04f5-4228-8993-6f925d9af303",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "e3d0abca-e022-486c-96ae-30510a485f7b"
-        ]
-      }
-    },
-    {
-      "id": "e3d0abca-e022-486c-96ae-30510a485f7b",
-      "blockName": "string",
-      "value": "Loading categories...",
-      "inputs": {}
-    }
-  ],
-  "public_components": [
-    {
-      "id": "da82e586-c4c8-4b60-a9e2-6c96df47cd57",
-      "blockName": "Root",
-      "value": null,
-      "inputs": {
-        "children": [
-          "f3e1481b-4bcb-45c1-b923-089ccdd7b772",
-          "8fa013b8-a60a-499b-bb6e-94ce18381d0c",
-          "9a7d98b7-dd2e-4548-be1b-4295b63ce0f7"
-        ]
-      }
-    },
-    {
-      "id": "9a7d98b7-dd2e-4548-be1b-4295b63ce0f7",
-      "blockName": "container",
-      "value": null,
-      "inputs": {
-        "children": [
-          "79a53687-90cb-4da5-bf0f-c95500075bac"
-        ],
-        "customCss": [
-          "a0dc8d14-5193-4914-ac35-1bf31b3a1697"
-        ],
-        "containerElement": [
-          "3516ce21-6033-4a56-ae2f-8b56924070cc"
-        ]
-      }
-    },
-    {
-      "id": "79a53687-90cb-4da5-bf0f-c95500075bac",
-      "blockName": "store",
-      "value": "",
-      "inputs": {
-        "key": [
-          "864995cd-f7ca-4587-ac09-7feb8e581bdd"
-        ]
-      }
-    },
-    {
-      "id": "864995cd-f7ca-4587-ac09-7feb8e581bdd",
-      "blockName": "string",
-      "value": "selected-category",
-      "inputs": {}
-    },
-    {
-      "id": "a0dc8d14-5193-4914-ac35-1bf31b3a1697",
-      "blockName": "textarea",
-      "value": null,
-      "inputs": {}
-    },
-    {
-      "id": "3516ce21-6033-4a56-ae2f-8b56924070cc",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "8fa013b8-a60a-499b-bb6e-94ce18381d0c",
-      "blockName": "fetchData",
-      "value": "",
-      "inputs": {
-        "url": [
-          "963e073f-008d-4d76-8168-51c7bdff8662"
-        ],
-        "Loading": [
-          "1a3ff28a-566e-45a9-a816-7734c3706ade"
-        ],
-        "children": [
-          "8112fe5c-83ab-4c10-889f-cacdc2159cc1"
-        ]
-      }
-    },
-    {
-      "id": "963e073f-008d-4d76-8168-51c7bdff8662",
-      "blockName": "add",
-      "value": "",
-      "inputs": {
-        "values": [
-          "2ac944a5-650f-4fc5-a976-876872a42bc7",
-          "4292ab82-ca4b-463a-8d8a-7118d91e2b32"
-        ]
-      }
-    },
-    {
-      "id": "4292ab82-ca4b-463a-8d8a-7118d91e2b32",
-      "blockName": "getStore",
-      "value": "",
-      "inputs": {
-        "key": [
-          "3fbbac10-5958-4ac6-a89a-94ce39de2e4c"
-        ]
-      }
-    },
-    {
-      "id": "3fbbac10-5958-4ac6-a89a-94ce39de2e4c",
-      "blockName": "string",
-      "value": "selected-category",
-      "inputs": {}
-    },
-    {
-      "id": "2ac944a5-650f-4fc5-a976-876872a42bc7",
-      "blockName": "string",
-      "value": "https://fakestoreapi.com/products/category/",
-      "inputs": {}
-    },
-    {
-      "id": "8112fe5c-83ab-4c10-889f-cacdc2159cc1",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "aac91c64-c063-44e8-af7e-a5bf2c45b21e"
-        ],
-        "containerElement": [
-          "6db6b703-0969-4053-a264-6fc4d0e940ce"
-        ],
-        "children": [
-          "b8fff59a-0028-4702-9a0e-6d6e5f7fbdb6"
-        ]
-      }
-    },
-    {
-      "id": "b8fff59a-0028-4702-9a0e-6d6e5f7fbdb6",
-      "blockName": "reducer",
-      "value": "",
-      "inputs": {
-        "values": [
-          "1e118ee6-b5d5-44ef-9315-ff61b29afd13"
-        ],
-        "block": [
-          "839e117d-5f22-4151-b178-3f95eac6f721"
-        ]
-      }
-    },
-    {
-      "id": "839e117d-5f22-4151-b178-3f95eac6f721",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "b8648d7e-0f30-4747-9bc3-72d622388a34"
-        ],
-        "containerElement": [
-          "48168a01-68f4-457a-987b-5ab1ccbf3e78"
-        ],
-        "children": [
-          "349c64ab-bcc5-40a4-a1e2-b4a462258dfb",
-          "ff08aef2-924f-4c71-9b45-5f538773e97e",
-          "cc6f452f-73ba-4cfb-bac5-2d43438fecf4",
-          "6ac8934b-012f-433e-86d9-ed066286a47c"
-        ]
-      }
-    },
-    {
-      "id": "b8648d7e-0f30-4747-9bc3-72d622388a34",
-      "blockName": "textarea",
-      "value": "box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\ntransition: 0.3s;\nborder-radius: 8px;\npadding: 16px;\nheight: 460px;\ndisplay: flex;\nflex-direction: column;\ngap: 8px;",
-      "inputs": {}
-    },
-    {
-      "id": "48168a01-68f4-457a-987b-5ab1ccbf3e78",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "6ac8934b-012f-433e-86d9-ed066286a47c",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "462e9ea7-4704-4a03-958b-205b4f3b5973"
-        ],
-        "containerElement": [
-          "8eb9505d-b83e-48e6-9d3b-c257fc4d659a"
-        ],
-        "text": [
-          "4269ac63-4d86-480e-bbfd-6e32a5c8fd20"
-        ]
-      }
-    },
-    {
-      "id": "8eb9505d-b83e-48e6-9d3b-c257fc4d659a",
-      "blockName": "string",
-      "value": "p",
-      "inputs": {}
-    },
-    {
-      "id": "462e9ea7-4704-4a03-958b-205b4f3b5973",
-      "blockName": "textarea",
-      "value": "font-size: 12px;\ntext-overflow: ellipsis;",
-      "inputs": {}
-    },
-    {
-      "id": "4269ac63-4d86-480e-bbfd-6e32a5c8fd20",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "7418da84-bafa-404b-b7a9-f7d7b14f21eb"
-        ]
-      }
-    },
-    {
-      "id": "7418da84-bafa-404b-b7a9-f7d7b14f21eb",
-      "blockName": "string",
-      "value": "description",
-      "inputs": {}
-    },
-    {
-      "id": "cc6f452f-73ba-4cfb-bac5-2d43438fecf4",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "7c106412-c778-4f77-9abf-8b1d3ba93d1b"
-        ],
-        "customCss": [
-          "551b9261-fbf1-4472-96ec-738b0981ed34"
-        ],
-        "containerElement": [
-          "8d5e705c-505c-42c3-a39c-ee20f44d9eb7"
-        ]
-      }
-    },
-    {
-      "id": "8d5e705c-505c-42c3-a39c-ee20f44d9eb7",
-      "blockName": "string",
-      "value": "p",
-      "inputs": {}
-    },
-    {
-      "id": "551b9261-fbf1-4472-96ec-738b0981ed34",
-      "blockName": "textarea",
-      "value": "text-align: center;\nfont-size: 20px;\nfont-weight: bold;",
-      "inputs": {}
-    },
-    {
-      "id": "7c106412-c778-4f77-9abf-8b1d3ba93d1b",
-      "blockName": "add",
-      "value": "",
-      "inputs": {
-        "values": [
-          "8e834602-ed11-495d-a9ec-c22721a74b81",
-          "20d88e69-b5be-4ba7-8722-55c1b92a2198"
-        ]
-      }
-    },
-    {
-      "id": "20d88e69-b5be-4ba7-8722-55c1b92a2198",
-      "blockName": "string",
-      "value": "$",
-      "inputs": {}
-    },
-    {
-      "id": "8e834602-ed11-495d-a9ec-c22721a74b81",
-      "blockName": "dataSelector",
-      "value": null,
-      "inputs": {
-        "selector": [
-          "9ab344b7-f46c-449b-9452-c934a6497f9d"
-        ]
-      }
-    },
-    {
-      "id": "9ab344b7-f46c-449b-9452-c934a6497f9d",
-      "blockName": "string",
-      "value": "price",
-      "inputs": {}
-    },
-    {
-      "id": "ff08aef2-924f-4c71-9b45-5f538773e97e",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "117657f5-f059-4e52-98ff-e0321a9eaf11"
-        ],
-        "containerElement": [
-          "019ea8f1-4ac2-469c-b6cb-5d8668a7f3d1"
-        ],
-        "customCss": [
-          "03e27cc3-4e59-4d72-8ee4-4078b1b5b412"
-        ]
-      }
-    },
-    {
-      "id": "03e27cc3-4e59-4d72-8ee4-4078b1b5b412",
-      "blockName": "textarea",
-      "value": "padding: 8px 16px;\ntext-align: center;\nfont-weight: 18px;",
-      "inputs": {}
-    },
-    {
-      "id": "117657f5-f059-4e52-98ff-e0321a9eaf11",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "87bdcadf-5151-4c90-9087-3bf02b60b830"
-        ]
-      }
-    },
-    {
-      "id": "87bdcadf-5151-4c90-9087-3bf02b60b830",
-      "blockName": "string",
-      "value": "title",
-      "inputs": {}
-    },
-    {
-      "id": "019ea8f1-4ac2-469c-b6cb-5d8668a7f3d1",
-      "blockName": "string",
-      "value": "p",
-      "inputs": {}
-    },
-    {
-      "id": "349c64ab-bcc5-40a4-a1e2-b4a462258dfb",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "containerElement": [
-          "5c0bef6e-4036-49e6-be1d-5c0fb4258270"
-        ],
-        "customCss": [
-          "919330d1-27ff-45d8-9ed0-e342f0dc8d5d"
-        ],
-        "children": [
-          "1168a0ee-f496-4ec6-bc04-f831a87fe76d"
-        ]
-      }
-    },
-    {
-      "id": "919330d1-27ff-45d8-9ed0-e342f0dc8d5d",
-      "blockName": "textarea",
-      "value": "height: 240px;",
-      "inputs": {}
-    },
-    {
-      "id": "1168a0ee-f496-4ec6-bc04-f831a87fe76d",
-      "blockName": "image",
-      "value": "",
-      "inputs": {
-        "alt": [
-          "e0a183cb-6ef7-4757-bb7b-61c79fd00622"
-        ],
-        "customCss": [
-          "afd627db-4ba6-4dd2-bb54-9c4804766849"
-        ],
-        "url": [
-          "afd627db-4ba6-4dd2-bb54-9c48047668a1"
-        ]
-      }
-    },
-    {
-      "id": "afd627db-4ba6-4dd2-bb54-9c4804766849",
-      "blockName": "Root",
-      "value": null,
-      "inputs": {
-        "children": []
-      }
-    },
-    {
-      "id": "afd627db-4ba6-4dd2-bb54-9c48047668a1",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "e8680c7c-9bc5-47eb-96d5-0a3d3a6afb9f"
-        ]
-      }
-    },
-    {
-      "id": "e8680c7c-9bc5-47eb-96d5-0a3d3a6afb9f",
-      "blockName": "string",
-      "value": "image",
-      "inputs": {}
-    },
-    {
-      "id": "e0a183cb-6ef7-4757-bb7b-61c79fd00622",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "046d8391-43b2-424c-84d5-4390bde42584"
-        ]
-      }
-    },
-    {
-      "id": "046d8391-43b2-424c-84d5-4390bde42584",
-      "blockName": "string",
-      "value": "title",
-      "inputs": {}
-    },
-    {
-      "id": "5c0bef6e-4036-49e6-be1d-5c0fb4258270",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "1e118ee6-b5d5-44ef-9315-ff61b29afd13",
-      "blockName": "dataSelector",
-      "value": null,
-      "inputs": {
-        "selector": [
-          "537dcd3b-484c-4a8d-b1d5-6d27bd82da2a"
-        ]
-      }
-    },
-    {
-      "id": "537dcd3b-484c-4a8d-b1d5-6d27bd82da2a",
-      "blockName": "string",
-      "value": "title",
-      "inputs": {}
-    },
-    {
-      "id": "6db6b703-0969-4053-a264-6fc4d0e940ce",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "aac91c64-c063-44e8-af7e-a5bf2c45b21e",
-      "blockName": "textarea",
-      "value": "display: grid;\ngap: 12px;\ngrid-template-columns: repeat(auto-fit, minmax(150px, 300px) );\npadding: 36px;\n\n@media screen and (max-width: 600px) {\n   & {\n      padding: 36px 0px;\n      justify-content: center;\n   }\n }",
-      "inputs": {}
-    },
-    {
-      "id": "1a3ff28a-566e-45a9-a816-7734c3706ade",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "6c5975db-6f70-4d57-84ce-4a42cb220222"
-        ]
-      }
-    },
-    {
-      "id": "6c5975db-6f70-4d57-84ce-4a42cb220222",
-      "blockName": "string",
-      "value": "Loading...",
-      "inputs": {}
-    },
-    {
-      "id": "f3e1481b-4bcb-45c1-b923-089ccdd7b772",
-      "blockName": "fetchData",
-      "value": "",
-      "inputs": {
-        "url": [
-          "838d9afb-61ac-41b2-bd70-001dea68bdf8"
-        ],
-        "Loading": [
-          "f9a7f926-04f5-4228-8993-6f925d9af303"
-        ],
-        "children": [
-          "92b17b16-631f-424e-a039-5c6dcdb8c44d"
-        ]
-      }
-    },
-    {
-      "id": "838d9afb-61ac-41b2-bd70-001dea68bdf8",
-      "blockName": "string",
-      "value": "https://fakestoreapi.com/products/categories",
-      "inputs": {}
-    },
-    {
-      "id": "92b17b16-631f-424e-a039-5c6dcdb8c44d",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "containerElement": [
-          "79f3d67d-d7bc-4285-87cd-6ba2a955ce5c"
-        ],
-        "children": [
-          "6a5d1a9b-412e-44ef-ad6a-7d80b08787b5"
-        ],
-        "customCss": [
-          "881d9135-a318-40dd-9f03-1f02261c94d5"
-        ]
-      }
-    },
-    {
-      "id": "881d9135-a318-40dd-9f03-1f02261c94d5",
-      "blockName": "textarea",
-      "value": "width: 100%;\noverflow-x: auto;\n\n@media screen and (max-width: 600px) {\n   & {\n      box-shadow: 5px 0 5px -5px #333;\n   }\n }",
-      "inputs": {}
-    },
-    {
-      "id": "6a5d1a9b-412e-44ef-ad6a-7d80b08787b5",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "a2de7d6b-30ba-4f10-9651-b8d71254f20c"
-        ],
-        "containerElement": [
-          "1dd30c78-5dd3-483b-afa0-4d65aeddc566"
-        ],
-        "children": [
-          "6cdcc45f-c6f0-44b8-b547-4665a1c4fe10"
-        ]
-      }
-    },
-    {
-      "id": "6cdcc45f-c6f0-44b8-b547-4665a1c4fe10",
-      "blockName": "reducer",
-      "value": "",
-      "inputs": {
-        "block": [
-          "a0eb9b8c-da49-4006-9e84-f136ae0784b3"
-        ],
-        "values": [
-          "aa350612-07e3-465c-bd83-5faa529d9649"
-        ]
-      }
-    },
-    {
-      "id": "aa350612-07e3-465c-bd83-5faa529d9649",
-      "blockName": "dataSelector",
-      "value": null,
-      "inputs": {
-        "selector": [
-          "d9a2c719-9329-44c7-8623-5afab1c90070"
-        ]
-      }
-    },
-    {
-      "id": "d9a2c719-9329-44c7-8623-5afab1c90070",
-      "blockName": "string",
-      "value": "",
-      "inputs": {}
-    },
-    {
-      "id": "a0eb9b8c-da49-4006-9e84-f136ae0784b3",
-      "blockName": "button",
-      "value": "",
-      "inputs": {
-        "onClick": [
-          "a91ee1ff-6c81-40a9-9a2a-30ef54212779"
-        ],
-        "customCss": [
-          "55e7936e-d579-48ac-8b68-06bd4a373db1"
-        ],
-        "children": [
-          "c6a7c68c-e56b-402b-87e7-cfc8adbaf63d",
-          "3508cfeb-9caf-48ce-a1a1-1b769e3d83db"
-        ]
-      }
-    },
-    {
-      "id": "55e7936e-d579-48ac-8b68-06bd4a373db1",
-      "blockName": "textarea",
-      "value": "width: 300px;\nheight: 200px;\nposition: relative;\nborder: none;\ncolor: black;\ntext-align: center;\ntext-decoration: none;\nfont-size: 20px;\ncursor: pointer;\nborder-radius: 8px;\npadding: 12px 30px;\ntransition-duration: 0.4s;\nbox-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\nposition: relative;\noverflow: hidden;\ntex-transform: capitalize;\n\n&:hover {\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);\n  transform: translateY(-3px);\n}",
-      "inputs": {}
-    },
-    {
-      "id": "a91ee1ff-6c81-40a9-9a2a-30ef54212779",
-      "blockName": "setStore",
-      "value": "",
-      "inputs": {
-        "key": [
-          "4eb91c82-d76e-4933-8b69-836d7e62fdec"
-        ],
-        "value": [
-          "ce9413ac-c591-4d41-bead-55505d082690"
-        ]
-      }
-    },
-    {
-      "id": "4eb91c82-d76e-4933-8b69-836d7e62fdec",
-      "blockName": "string",
-      "value": "selected-category",
-      "inputs": {}
-    },
-    {
-      "id": "ce9413ac-c591-4d41-bead-55505d082690",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "a8664540-7103-481a-81ca-9f881240d667"
-        ]
-      }
-    },
-    {
-      "id": "a8664540-7103-481a-81ca-9f881240d667",
-      "blockName": "string",
-      "value": "",
-      "inputs": {}
-    },
-    {
-      "id": "3508cfeb-9caf-48ce-a1a1-1b769e3d83db",
-      "blockName": "container",
-      "value": "",
-      "inputs": {
-        "containerElement": [
-          "d021f1f8-8ae8-4b87-b5dd-923f0e3871d6"
-        ],
-        "children": [
-          "5efa00d6-d471-4047-8312-912236435d1a"
-        ],
-        "customCss": [
-          "b2ce806f-5f00-47b8-a4ac-a2ba17d44c83"
-        ]
-      }
-    },
-    {
-      "id": "b2ce806f-5f00-47b8-a4ac-a2ba17d44c83",
-      "blockName": "textarea",
-      "value": "position: absolute;\ninset: 0;\ncolor: white;\nbackdrop-filter: brightness(75%);\ndisplay: flex;\njustify-content: center;\nalign-items: center;",
-      "inputs": {}
-    },
-    {
-      "id": "5efa00d6-d471-4047-8312-912236435d1a",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "493f9b1d-5154-4847-bb18-5209010483f0"
-        ]
-      }
-    },
-    {
-      "id": "493f9b1d-5154-4847-bb18-5209010483f0",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "0c728fdc-6a11-45c5-8509-918744f0507c"
-        ]
-      }
-    },
-    {
-      "id": "0c728fdc-6a11-45c5-8509-918744f0507c",
-      "blockName": "string",
-      "value": "",
-      "inputs": {}
-    },
-    {
-      "id": "d021f1f8-8ae8-4b87-b5dd-923f0e3871d6",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "c6a7c68c-e56b-402b-87e7-cfc8adbaf63d",
-      "blockName": "image",
-      "value": "",
-      "inputs": {
-        "customCss": [
-          "f1607798-b453-4e03-849d-b2afd0670bde"
-        ],
-        "alt": [
-          "c7074a7e-40c5-4924-b690-a6d719de0e0e"
-        ],
-        "url": [
-          "622d8811-0896-4fe8-b2a7-a3ef2a21335c"
-        ]
-      }
-    },
-    {
-      "id": "f1607798-b453-4e03-849d-b2afd0670bde",
-      "blockName": "textarea",
-      "value": "position: absolute;\ninset: 0;\nmargin-right: 10px;\nborder-radius: 5px;\nobject-fit: cover;\n",
-      "inputs": {}
-    },
-    {
-      "id": "c7074a7e-40c5-4924-b690-a6d719de0e0e",
-      "blockName": "string",
-      "value": null,
-      "inputs": {}
-    },
-    {
-      "id": "622d8811-0896-4fe8-b2a7-a3ef2a21335c",
-      "blockName": "mediaSelector",
-      "value": "",
-      "inputs": {
-        "name": [
-          "46e02f35-a0a7-4c77-a4ee-4d50eb0d1458"
-        ]
-      }
-    },
-    {
-      "id": "46e02f35-a0a7-4c77-a4ee-4d50eb0d1458",
-      "blockName": "dataSelector",
-      "value": "",
-      "inputs": {
-        "selector": [
-          "aa4a6fba-02f1-41fe-b064-ec57b7a24f57"
-        ]
-      }
-    },
-    {
-      "id": "aa4a6fba-02f1-41fe-b064-ec57b7a24f57",
-      "blockName": "string",
-      "value": "",
-      "inputs": {}
-    },
-    {
-      "id": "1dd30c78-5dd3-483b-afa0-4d65aeddc566",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "a2de7d6b-30ba-4f10-9651-b8d71254f20c",
-      "blockName": "textarea",
-      "value": "padding: 36px;\ndisplay: flex;\ngap: 16px;\nwidth: fit-content;",
-      "inputs": {}
-    },
-    {
-      "id": "79f3d67d-d7bc-4285-87cd-6ba2a955ce5c",
-      "blockName": "string",
-      "value": "div",
-      "inputs": {}
-    },
-    {
-      "id": "f9a7f926-04f5-4228-8993-6f925d9af303",
-      "blockName": "textBlock",
-      "value": "",
-      "inputs": {
-        "text": [
-          "e3d0abca-e022-486c-96ae-30510a485f7b"
-        ]
-      }
-    },
-    {
-      "id": "e3d0abca-e022-486c-96ae-30510a485f7b",
-      "blockName": "string",
-      "value": "Loading categories...",
-      "inputs": {}
-    }
-  ]
-},{
-  "_id": {
-    "$binary": {
-      "base64": "HsGhqoWFS1Se5/t4G2cmJw==",
-      "subType": "04"
-    }
-  },
-  "pageName": "Second Page",
-  "rootId": {
-    "$binary": {
-      "base64": "DWkQv5keRKCvzN+mAki+KQ==",
-      "subType": "04"
-    }
-  },
-  "user_id": {
-    "$oid": "644cef90f9a388bd95bb85cd"
-  },
-  "created_at": {
-    "$date": "2023-05-01T00:12:59.328Z"
-  },
-  "description": "Test",
-  "components": [],
-  "public_components": []
-}]
+  {
+    "_id": {
+      "$binary": {
+        "base64": "HsGhqoWFS1Se5/t4G2cmJw==",
+        "subType": "04"
+      }
+    },
+    "pageName": "Second Page",
+    "rootId": {
+      "$binary": {
+        "base64": "DWkQv5keRKCvzN+mAki+KQ==",
+        "subType": "04"
+      }
+    },
+    "user_id": {
+      "$oid": "644cef90f9a388bd95bb85cd"
+    },
+    "created_at": {
+      "$date": "2023-05-01T00:12:59.328Z"
+    },
+    "description": "Test",
+    "components": [],
+    "public_components": []
+  }
+]

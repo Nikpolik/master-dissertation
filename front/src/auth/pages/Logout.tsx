@@ -1,12 +1,12 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 function Logout() {
   useEffect(() => {
     localStorage.clear();
-    window.location.href = "/logout";
-  }, []) 
+    window.location.href = '/logout';
+  }, []);
 
-  return <span>Login out...</span>
+  return <span>Login out...</span>;
 }
 
 export default Logout;

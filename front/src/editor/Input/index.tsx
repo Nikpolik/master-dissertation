@@ -39,7 +39,7 @@ function Input(props: BlockPickerProps) {
     config: { type, inputsSettings, defaultInputSettings, name: blockTitle },
   } = useGetBlockInfo<any>(id);
 
-  const [open,] = useOpen(id);
+  const [open] = useOpen(id);
 
   const [{ opacity }, dragRef] = useDrag(() => ({
     type,
@@ -70,13 +70,30 @@ function Input(props: BlockPickerProps) {
     blockName === PrimitiveBlocks.number ||
     blockName === PrimitiveBlocks.textarea
   ) {
-    return <PrimitiveInput open={open} ref={dragRef} depth={depth} blockName={blockName} value={value} type={type} {...props} />;
+    return (
+      <PrimitiveInput
+        open={open}
+        ref={dragRef}
+        depth={depth}
+        blockName={blockName}
+        value={value}
+        type={type}
+        {...props}
+      />
+    );
   }
 
   const isObject = PrimitiveBlocks.object === blockName;
 
   return (
-    <Container data-cy-block={blockName} data-cy-id={id} data-cy="editor-input-container" opacity={opacity} ref={dragRef} depth={depth}>
+    <Container
+      data-cy-block={blockName}
+      data-cy-id={id}
+      data-cy="editor-input-container"
+      opacity={opacity}
+      ref={dragRef}
+      depth={depth}
+    >
       {type !== InputType.root && (
         <Header data-cy="editor-header-input">
           <InputTitle

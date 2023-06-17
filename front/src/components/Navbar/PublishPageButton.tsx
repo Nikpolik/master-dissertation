@@ -21,7 +21,13 @@ function PublishPageButton() {
 
   return (
     <Item>
-      <LoadingButton data-cy="editor-publish" onClick={handleClick} loading={loading} variant="contained" endIcon={<PublishedWithChanges />}>
+      <LoadingButton
+        data-cy="editor-publish"
+        onClick={handleClick}
+        loading={loading}
+        variant="contained"
+        endIcon={<PublishedWithChanges />}
+      >
         Publish
       </LoadingButton>
     </Item>

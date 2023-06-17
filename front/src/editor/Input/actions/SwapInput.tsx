@@ -15,7 +15,13 @@ function SwapInput(props: SwapInputProps) {
 
   return (
     <>
-      <Button data-cy="editor-move-up-input" disabled={index === 0} onClick={() => swapInput(inputName, index, 'up')} size="small" variant="contained">
+      <Button
+        data-cy="editor-move-up-input"
+        disabled={index === 0}
+        onClick={() => swapInput(inputName, index, 'up')}
+        size="small"
+        variant="contained"
+      >
         <MoveUp fontSize="small" />
       </Button>
       <Button

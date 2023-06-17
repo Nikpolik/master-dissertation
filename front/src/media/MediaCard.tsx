@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 import { createStaticURL } from 'common/request';
 
-import { Asset } from './state';
 import DeleteMedia from './DeleteMedia';
+import { Asset } from './state';
 
 const StyledCard = styled(Card)`
   width: 320px;
@@ -47,7 +47,7 @@ function MediaCard(props: MediaCardProps) {
         <IconButton data-cy="media-edit-button" onClick={handleClick}>
           <EditIcon />
         </IconButton>
-        <DeleteMedia id={asset.id}/>
+        <DeleteMedia id={asset.id} />
       </StyledCardActions>
     </StyledCard>
   );

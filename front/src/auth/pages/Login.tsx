@@ -27,7 +27,13 @@ function Login() {
       <Card onSubmit={handleSubmit}>
         <Title variant="h1">Login</Title>
         <Input name="name" placeholder="Name" value={username} onChange={createHandler('username')} />
-        <Input name="password" placeholder="Password" type="password" value={password} onChange={createHandler('password')} />
+        <Input
+          name="password"
+          placeholder="Password"
+          type="password"
+          value={password}
+          onChange={createHandler('password')}
+        />
         {error && <ErrorText data-cy="error-login">{error}</ErrorText>}
         <LoadingButton type="submit" loading={loading} variant="contained">
           Login

@@ -22,7 +22,13 @@ function RefreshPageButton() {
 
   return (
     <Item>
-      <LoadingButton data-cy="editor-refresh" onClick={handleClick} loading={loading} variant="contained" endIcon={<Refresh />}>
+      <LoadingButton
+        data-cy="editor-refresh"
+        onClick={handleClick}
+        loading={loading}
+        variant="contained"
+        endIcon={<Refresh />}
+      >
         Refresh
       </LoadingButton>
     </Item>

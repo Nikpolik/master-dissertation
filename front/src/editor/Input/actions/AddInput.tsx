@@ -27,7 +27,7 @@ function AddInput(props: AddInputProps) {
   return (
     <ButtonContainer data-cy="editor-add-input">
       <Button variant="contained" onClick={() => addInput(inputName)}>
-        <Add  />
+        <Add />
       </Button>
     </ButtonContainer>
   );

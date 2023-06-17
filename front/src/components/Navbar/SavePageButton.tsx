@@ -21,7 +21,13 @@ function SavePageButton() {
 
   return (
     <Item>
-      <LoadingButton data-cy="editor-save" onClick={handleClick} loading={loading} variant="contained" endIcon={<Save />}>
+      <LoadingButton
+        data-cy="editor-save"
+        onClick={handleClick}
+        loading={loading}
+        variant="contained"
+        endIcon={<Save />}
+      >
         Save
       </LoadingButton>
     </Item>

@@ -11,7 +11,7 @@ import {
 } from '@mui/material';
 import { useState } from 'react';
 
-import {  useDeleteMedia } from './hooks';
+import { useDeleteMedia } from './hooks';
 
 interface DeleteMediaProps {
   id: string;

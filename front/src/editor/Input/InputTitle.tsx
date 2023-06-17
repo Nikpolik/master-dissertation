@@ -1,9 +1,8 @@
 import { TextField } from '@mui/material';
+import { useEditName } from 'core';
 import debounce from 'lodash.debounce';
 import { useCallback, useState } from 'react';
 import { ChangeEventHandler, Fragment } from 'react';
-
-import { useEditName } from 'core';
 
 import { InputTitleSpan } from './styles';
 

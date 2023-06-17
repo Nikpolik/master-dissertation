@@ -1,15 +1,15 @@
 import { MenuItem, Select, TextField } from '@mui/material';
 import { InputType, PrimitiveBlocks, useHandleBlockValueChange } from 'core';
 import { forwardRef, ForwardedRef } from 'react';
+import styled from 'styled-components';
 
 import { BlockPickerProps } from '.';
 import InputTitle from './InputTitle';
 import DeleteInput from './actions/DeleteInput';
 import EditInput from './actions/EditInput';
+import OpenInput from './actions/OpenInput';
 import SwapInput from './actions/SwapInput';
 import { PrimitiveContainer, Header } from './styles';
-import styled from 'styled-components';
-import OpenInput from './actions/OpenInput';
 
 interface PrimitiveInputProps extends BlockPickerProps {
   type: InputType;
@@ -18,7 +18,7 @@ interface PrimitiveInputProps extends BlockPickerProps {
   open: boolean;
 }
 
-const StyledTextField = styled(TextField)<{ isTextarea?: boolean, open?: boolean }>`
+const StyledTextField = styled(TextField)<{ isTextarea?: boolean; open?: boolean }>`
   ${({ isTextarea, open }) => isTextarea && !open && 'height: 0; overflow: hidden; width: 0;'}
   ${({ isTextarea, open }) => isTextarea && open && 'width: 400px;'}
 `;
@@ -70,7 +70,13 @@ const PrimitiveInput = forwardRef((props: PrimitiveInputProps, ref: ForwardedRef
   }
 
   return (
-    <PrimitiveContainer data-cy-block={blockName} data-cy-id={props.id} data-cy="editor-input-container" ref={ref} depth={depth || 0}>
+    <PrimitiveContainer
+      data-cy-block={blockName}
+      data-cy-id={props.id}
+      data-cy="editor-input-container"
+      ref={ref}
+      depth={depth || 0}
+    >
       <Header data-cy="editor-header-input">
         <InputTitle
           parentId={props.parentId}

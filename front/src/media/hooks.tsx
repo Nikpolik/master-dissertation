@@ -73,14 +73,14 @@ function useDeleteMedia(id: string) {
   const [_, setMediaState] = useRecoilState(mediaAtom);
 
   async function deleteMedia() {
-    await request()
+    await request();
 
     setMediaState((prev) => {
       const { [id]: _, ...assets } = prev.assets;
       return { ...prev, assets };
     });
   }
-  return { loading, deleteMedia }
+  return { loading, deleteMedia };
 }
 
 export { useDeleteMedia };
