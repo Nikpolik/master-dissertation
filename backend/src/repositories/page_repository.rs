@@ -61,6 +61,26 @@ impl MongoRepo<Page> {
         return Ok(pages_vec);
     }
 
+    pub async fn get_public_page(&self, page_id: &String) -> Result<Option<Page>, PageRepoError> {
+        let parsed_id = match uuid::Uuid::parse_str(page_id) {
+            Ok(v) => v,
+            Err(_) => return Err(PageRepoError::IdParseError),
+        };
+        let query = doc! { "_id": parsed_id};
+
+        let page = match self.col.find_one(query, None).await {
+            Ok(Some(v)) => v,
+            Ok(None) => return Err(PageRepoError::CannotFind),
+            Err(_) => return Err(PageRepoError::CannotFind),
+        };
+
+        if page.public_components.is_empty() {
+            return Ok(None);
+        }
+
+        Ok(Some(page))
+    }
+
     pub async fn get_page(
         &self,
         page_id: &String,

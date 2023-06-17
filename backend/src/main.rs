@@ -10,7 +10,7 @@ use crate::api::asset_api::{
 };
 use crate::api::page_api::{
     create_page, delete_page, get_page, get_page_components, get_pages, get_public_components,
-    publish_page, set_page_components,
+    get_public_page, publish_page, set_page_components,
 };
 use crate::api::user_api::{authenticate, create_user, me};
 use crate::files::FileManager;
@@ -76,6 +76,7 @@ async fn main() -> std::io::Result<()> {
             .service(delete_page)
             .service(set_page_components)
             .service(get_page_components)
+            .service(get_public_page)
             .service(get_public_components)
             .service(publish_page)
             .service(create_asset)
