@@ -33,8 +33,13 @@ function PageCard(props: PageCardProps) {
   function shareUrl() {
     console.log("Share clicked")
     const url = new URL(`/${id}/public`, window.location.href).href;
-    navigator.share ? navigator.share({ text: url, title: pageName }) : navigator.clipboard.writeText(url);
-    window.alert('Copied page url to clipboard!');
+    try {
+      navigator.share ? navigator.share({ text: url, title: pageName }) : navigator.clipboard.writeText(url);
+      window.alert('Copied page url to clipboard!');
+    } catch (e) {
+      console.error(e);
+      window.alert(`Failed to get permssions to page url to clipboard! You can copy it manually: ${url}`);
+    }
   }
 
   return (
