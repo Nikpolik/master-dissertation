@@ -197,9 +197,10 @@ function useGetAllInputs(rootId: string) {
       const currentBlock = await snapshot.getPromise(blockStateAtomFamily(currentId));
       blocks.push(currentBlock);
 
-      Object.values(currentBlock.inputs).forEach((id) => {
-        nodes = nodes.concat(id);
-      });
+      const inputIds = Object.values(currentBlock.inputs);
+      for (let i = 0; i < inputIds.length; i++) {
+        nodes = nodes.concat(inputIds[i]);
+      }
     }
     return blocks;
   };
