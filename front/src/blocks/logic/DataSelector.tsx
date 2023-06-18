@@ -48,7 +48,7 @@ const dataSelectorEntry: BlockEntry<DataSelectorChildren> = {
   },
   type: InputType.any,
   name: 'Data Selector',
-  category: 'Misc',
+  category: 'Logic',
 };
 
 registerBlock('dataSelector', dataSelectorEntry);

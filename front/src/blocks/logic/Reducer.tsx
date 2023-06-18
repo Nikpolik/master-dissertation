@@ -1,4 +1,4 @@
-import { BlockEntry, InputType, PrimitiveBlocks, registerBlock, useInputs } from 'core';
+import { BlockEntry, InputType, registerBlock, useInputs } from 'core';
 import { ComponentType } from 'react';
 
 import { DataFetchBlockProvider } from './FetchData';
@@ -44,7 +44,7 @@ const reducerEntry: BlockEntry<ReducerChildren> = {
   },
   type: InputType.block,
   name: 'Reducer',
-  category: 'Misc',
+  category: 'Logic',
 };
 
 registerBlock('reducer', reducerEntry);

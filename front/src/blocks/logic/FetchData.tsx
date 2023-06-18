@@ -86,7 +86,7 @@ const fetchDataEntry: BlockEntry<FetchDataChildren> = {
   },
   type: InputType.block,
   name: 'Fetch',
-  category: 'Misc',
+  category: 'Logic',
 };
 
 registerBlock('fetchData', fetchDataEntry);
