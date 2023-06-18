@@ -42,7 +42,7 @@ const concatEntry: BlockEntry<ConcatChildren> = {
     },
   },
   type: InputType.any,
-  name: 'Add',
+  name: 'Concatenate',
   category: 'Logic',
 };
 
