@@ -44,7 +44,7 @@ const reducerEntry: BlockEntry<ReducerChildren> = {
   },
   type: InputType.block,
   name: 'Reducer',
-  category: 'Logic',
+  category: 'Misc',
 };
 
 registerBlock('reducer', reducerEntry);
