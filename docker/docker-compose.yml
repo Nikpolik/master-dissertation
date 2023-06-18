@@ -14,7 +14,7 @@ services:
     image: nikpolik/dissertation_backend:latest
     build:
       context: ../backend
-      dockerfile: ../docker/backend.Dockerfile
+      dockerfile: ../backend/Dockerfile
     volumes:
       - /var/dissertation/data/files:/usr/src/files
     ports:
@@ -22,6 +22,9 @@ services:
   front:
     container_name: ${COMPOSE_PROJECT_NAME}_front
     image: nikpolik/dissertation_front:latest
+    build:
+      context: ../front
+      dockerfile: ../front/Dockerfile
     ports:
       - 8888:80
     volumes:
