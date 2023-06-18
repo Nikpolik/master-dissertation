@@ -3,9 +3,7 @@ import { Button as MButton } from '@mui/material';
 import { useDeleteInput } from 'core';
 import styled from 'styled-components';
 
-const Button = styled(MButton)`
-  font-size: 8px;
-`;
+const Button = styled(MButton)``;
 
 interface DeleteProps {
   blockId: string;
@@ -19,7 +17,7 @@ function Delete(props: DeleteProps) {
 
   return (
     <Button data-cy="editor-delete-input" size="small" variant="contained" onClick={handleDelete}>
-      <DeleteIcon fontSize="inherit" />
+      <DeleteIcon />
     </Button>
   );
 }
