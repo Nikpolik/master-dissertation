@@ -1,4 +1,4 @@
-import { MenuItem, Select, TextField } from '@mui/material';
+import { ButtonGroup, MenuItem, Select, TextField } from '@mui/material';
 import { InputType, PrimitiveBlocks, useHandleBlockValueChange } from 'core';
 import { forwardRef, ForwardedRef } from 'react';
 import styled from 'styled-components';
@@ -86,17 +86,19 @@ const PrimitiveInput = forwardRef((props: PrimitiveInputProps, ref: ForwardedRef
           showName={showName}
         />
         {input}
-        {isTextarea && <OpenInput id={props.id} />}
-        <EditInput config={props.config} id={props.id} />
-        {showSwap && (
-          <SwapInput
-            siblingsCount={props.siblingsCount}
-            parentId={props.parentId}
-            index={props.index || 0}
-            inputName={props.name}
-          />
-        )}
-        {showDelete && <DeleteInput parentId={parentId} blockId={props.id} />}
+        <ButtonGroup>
+          {isTextarea && <OpenInput id={props.id} />}
+          <EditInput config={props.config} id={props.id} />
+          {showSwap && (
+            <SwapInput
+              siblingsCount={props.siblingsCount}
+              parentId={props.parentId}
+              index={props.index || 0}
+              inputName={props.name}
+            />
+          )}
+          {showDelete && <DeleteInput parentId={parentId} blockId={props.id} />}
+        </ButtonGroup>
       </Header>
     </PrimitiveContainer>
   );
