@@ -1,4 +1,4 @@
-import { BlockEntry, InputType, PrimitiveBlocks, registerBlock, useInputs } from 'core';
+import { BlockEntry, InputType, registerBlock, useInputs } from 'core';
 import { ChangeEvent } from 'react';
 
 interface InputProps {
@@ -6,21 +6,24 @@ interface InputProps {
 }
 
 interface InputChildren {
-  onChange: Function;
-  value: string | number;
+  onChange: () => Function;
+  value: () => string | number | null;
 }
 
 function InputBlock(props: InputProps) {
-  const { onChange, value } = useInputs<InputChildren>(props.id);
+  const { onChange: useOnChange, value: useValue } = useInputs<InputChildren>(props.id);
+  const onChange = useOnChange();
+  const value = useValue();
 
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
     const value = e.currentTarget.value;
     if (onChange) {
+      console.log('Calling on change', value);
       onChange({ value });
     }
   }
 
-  return <input value={value} onChange={handleChange} />;
+  return <input value={value ? value : undefined} onChange={handleChange} />;
 }
 
 const inputEntry: BlockEntry<InputChildren> = {

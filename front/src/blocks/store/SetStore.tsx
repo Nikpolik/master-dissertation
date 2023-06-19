@@ -4,7 +4,6 @@ import { stores } from './StoreBlock';
 
 interface SetStoreBlockProps {
   id: string;
-  value?: () => string;
 }
 
 interface SetStoreChildren {
@@ -18,16 +17,12 @@ export function SetStoreBlock(props: SetStoreBlockProps) {
   let value = useValue();
   const id = stores.get(key);
 
-  return () => {
-    if (value === null && props.value) {
-      value = props.value();
-    }
-
+  return ({ value: eventValue }: { value: string }) => {
     if (!id) {
       return;
     }
 
-    setBlockValue(id, value);
+    setBlockValue(id, eventValue || value);
   };
 }
 
