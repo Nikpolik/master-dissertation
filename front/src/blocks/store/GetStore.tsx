@@ -1,4 +1,5 @@
 import { BlockEntry, blockStateAtomFamily, InputType, PrimitiveBlocks, registerBlock, useInputs } from 'core';
+import { useEffect, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 
 import { stores } from './StoreBlock';
@@ -13,9 +14,13 @@ interface GetStoreChildren {
 
 export function GetStoreBlock(props: GetStoreBlockProps) {
   const { key: useKey } = useInputs<GetStoreChildren>(props.id);
+  const [id, setId] = useState<string | undefined>();
   const key = useKey();
-  const id = stores.get(key);
   const { value } = useRecoilValue(blockStateAtomFamily(id || ''));
+
+  useEffect(() => {
+    setId(stores.get(key));
+  }, [key]);
 
   if (!id) {
     return undefined;

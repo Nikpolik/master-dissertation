@@ -15,9 +15,10 @@ export function SetStoreBlock(props: SetStoreBlockProps) {
   let { key: useKey, value: useValue } = useInputs<SetStoreChildren>(props.id);
   const key = useKey();
   let value = useValue();
-  const id = stores.get(key);
 
   return ({ value: eventValue }: { value: string }) => {
+    const id = stores.get(key);
+
     if (!id) {
       return;
     }

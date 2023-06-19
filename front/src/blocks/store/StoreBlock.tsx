@@ -5,17 +5,6 @@ import { MutableRefObject, useEffect, useRef } from 'react';
 export const stores: Map<string, string> = new Map();
 export const subscriptions: Map<string, Set<string>> = new Map();
 
-function addSubscription(storeKey: string, blockId: string) {
-  const store = stores.get(storeKey);
-  if (!store) {
-    return;
-  }
-
-  const storeSubs = subscriptions.get(storeKey) || new Set();
-  storeSubs.add(blockId);
-  subscriptions.set(storeKey, storeSubs);
-}
-
 interface StoreBlockProps {
   id: string;
 }
@@ -41,9 +30,10 @@ const StoreBlock = (props: StoreBlockProps) => {
     if (prevKey.current) {
       stores.delete(prevKey.current);
     }
+
     prevKey.current = key;
     stores.set(key, props.id);
-  }, [key]);
+  }, [key, props.id]);
 
   return <></>;
 };
@@ -64,4 +54,3 @@ const storeEntry: BlockEntry = {
 };
 
 registerBlock('store', storeEntry);
-export { addSubscription };
