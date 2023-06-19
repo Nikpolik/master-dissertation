@@ -43,7 +43,7 @@ const reducerEntry: BlockEntry<ReducerChildren> = {
     },
   },
   type: InputType.block,
-  name: 'Reducer',
+  name: 'ForEach',
   category: 'Misc',
 };
 
