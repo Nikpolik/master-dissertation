@@ -1,3 +1,6 @@
+// This file contains all the types related to the block system
+// and the block editor
+
 import { ElementType } from 'react';
 import { RecoilState } from 'recoil';
 

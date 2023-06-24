@@ -62,7 +62,7 @@ function processInput(id: string, get: any, array = false): Child {
     case InputType.block:
     case InputType.store:
     case InputType.root:
-      let Component = block; // lol
+      let Component = block; 
       child = (props: any) => <Component {...props} key={array ? id : undefined} id={id} />;
       break;
     case InputType.number:

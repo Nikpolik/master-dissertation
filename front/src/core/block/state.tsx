@@ -33,6 +33,7 @@ const blockStateAtomFamily = atomFamily<BlockState, string>({
   }),
 });
 
+// This selector is used to get the value of a block
 const blockValueSelectorFamily = selectorFamily({
   key: 'BlockValueSelector',
   get:
@@ -60,6 +61,11 @@ const blockValueSelectorFamily = selectorFamily({
     },
 });
 
+// This selector is used to fetch the inputs of a block
+// It first reads the block state and then uses the block name to fetch 
+// its configuration. Then for each input found in the configuration it
+// fetches the corresponding block state and returns it
+// Finally it calls process input function and returns it
 const inputTypeSelector = selectorFamily({
   key: 'BlockTypeSelector',
   get:
@@ -87,24 +93,12 @@ const inputTypeSelector = selectorFamily({
           inputBlocks[inputName] = processInput(inputs[inputName][0], get);
         }
       }
-      // for (const inputName in inputs) {
-      //   const inputSettings = configuration.inputsSettings[inputName] || configuration.defaultInputSettings;
-      //
-      //   if (!inputSettings) {
-      //     continue;
-      //   }
-      //
-      //   if (inputSettings.array) {
-      //     inputBlocks[inputName] = inputs[inputName].map((id) => processInput(id, get, true));
-      //   } else {
-      //     inputBlocks[inputName] = processInput(inputs[inputName][0], get);
-      //   }
-      // }
 
       return inputBlocks;
     },
 });
 
+// This selector is used to fetch the block state and its configuration
 const blockInfoSelector = selectorFamily({
   key: 'blockInfoSelector',
   get:

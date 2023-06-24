@@ -1,3 +1,6 @@
+// This file contains all the hooks that are used to interact with the block state
+// It is mostly a wrapper around the recoil hooks and utility functions
+// These are primerly used by the block editor and the blocks themselves
 import { ChangeEvent } from 'react';
 import {
   useRecoilTransaction_UNSTABLE,
@@ -41,6 +44,7 @@ function useHandleBlockValueChange(blockId: string) {
 }
 
 // This hook can only be used by array or object inputs
+// It will add a new input to the array or object
 function useAddInput(blockId: string) {
   return useRecoilCallback(
     ({ set, snapshot }) =>
@@ -206,6 +210,7 @@ function useGetAllInputs(rootId: string) {
   };
 }
 
+// Initializes the state of the editor with the given inputs
 function useInitializeInputs() {
   return useRecoilTransaction_UNSTABLE(({ set }) => (inputs: BlockState[]) => {
     inputs.forEach((input) => {
@@ -214,6 +219,7 @@ function useInitializeInputs() {
   });
 }
 
+// Used to edit the name of an input, only for objects
 function useEditName(id: string) {
   const setState = useSetRecoilState(blockStateAtomFamily(id));
   return function (prevName: string, name: string) {
