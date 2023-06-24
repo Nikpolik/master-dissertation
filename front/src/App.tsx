@@ -14,7 +14,7 @@ import { Reset } from 'styled-reset';
 import theme from 'common/theme';
 
 import './blocks';
-import Navbar from './components/Navbar';
+import Navbar from './common/Navbar';
 import Pages from './pages/Pages';
 
 function App() {
