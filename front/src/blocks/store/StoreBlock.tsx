@@ -5,6 +5,15 @@ import { MutableRefObject, useEffect, useRef } from 'react';
 export const stores: Map<string, string> = new Map();
 export const subscriptions: Map<string, Set<string>> = new Map();
 
+export function getStore(id: string) {
+  const store = stores.get(id);
+  if (!store) {
+    return undefined;
+  }
+
+  return store;
+}
+
 interface StoreBlockProps {
   id: string;
 }

@@ -19,6 +19,10 @@ function ConcatBlock(props: ConcatProps) {
   let total;
   for (const useValue of values) {
     const value = useValue();
+    if (!value) {
+      continue;
+    }
+
     if (total === undefined) {
       total = value;
     } else {

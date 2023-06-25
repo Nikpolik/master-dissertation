@@ -2,7 +2,7 @@ import { BlockEntry, blockStateAtomFamily, InputType, PrimitiveBlocks, registerB
 import { useEffect, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import { stores } from './StoreBlock';
+import { getStore } from './StoreBlock';
 
 interface GetStoreBlockProps {
   id: string;
@@ -14,17 +14,25 @@ interface GetStoreChildren {
 
 export function GetStoreBlock(props: GetStoreBlockProps) {
   const { key: useKey } = useInputs<GetStoreChildren>(props.id);
-  const [id, setId] = useState<string | undefined>();
   const key = useKey();
-  const { value } = useRecoilValue(blockStateAtomFamily(id || ''));
-  console.log('value', value);
+  const [id, setId] = useState<string | undefined>(undefined);
 
   useEffect(() => {
-    console.log('key', key);
-    setId(stores.get(key));
+    if (!key) {
+      return;
+    }
+
+    const store = getStore(key);
+    if (!store) {
+      return;
+    }
+
+    setId(store);
   }, [key]);
 
-  if (!id) {
+  const { value } = useRecoilValue(blockStateAtomFamily(id || ''));
+
+  if (!id || !key) {
     return undefined;
   }
 
