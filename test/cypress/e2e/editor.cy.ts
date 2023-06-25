@@ -74,15 +74,22 @@ describe("Editor", () => {
       .getInput("children")
       .children("[data-cy='editor-drop-target']")
       .blockAction("edit");
+
     cy.contains("Text Block").click();
     cy.getBlock("textBlock").blockAction("toggle");
     cy.getBlock("textBlock").getInput("text").find("input").type("Hello World");
+
     cy.get("[data-cy='editor-save']").click();
     cy.get("[data-cy='editor-publish']").click();
+
     cy.visit("/pages");
-    cy.get("[data-cy='pages-share-button']")
+    const $text = cy.contains(TEST_PAGE_NAME).should("exist");
+    const $card = $text.closest("[data-cy='pages-card']").should("exist");
+    $card
+      .find("[data-cy='pages-share-button']")
       .invoke("removeAttr", "target")
       .click();
+
     cy.contains("Hello World");
   });
 
