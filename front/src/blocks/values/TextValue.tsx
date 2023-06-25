@@ -12,5 +12,10 @@ const textEntry: BlockEntry = {
   category: 'Values',
 };
 
+const textareaEntry: BlockEntry = {
+  ...textEntry,
+  name: 'Textarea',
+};
+
 registerBlock(PrimitiveBlocks.string, textEntry);
-registerBlock(PrimitiveBlocks.textarea, textEntry);
+registerBlock(PrimitiveBlocks.textarea, textareaEntry);

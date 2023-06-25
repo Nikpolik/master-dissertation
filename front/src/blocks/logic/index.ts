@@ -3,3 +3,4 @@ import './DataSelector';
 import './FetchData';
 import './ForEach';
 import './If';
+import './Equals';
