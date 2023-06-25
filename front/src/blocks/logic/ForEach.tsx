@@ -1,5 +1,6 @@
 import { BlockEntry, InputType, registerBlock, useInputs } from 'core';
 import { ComponentType } from 'react';
+import { v4 as uuid } from 'uuid';
 
 import { DataFetchBlockProvider } from './FetchData';
 
@@ -21,7 +22,7 @@ function ReducerBlock(props: ReducerProps) {
   }
 
   return values.map((value, i) => (
-    <DataFetchBlockProvider key={i} value={value}>
+    <DataFetchBlockProvider key={uuid()} value={value}>
       <Block />
     </DataFetchBlockProvider>
   ));
