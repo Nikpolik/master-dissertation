@@ -17,8 +17,10 @@ export function GetStoreBlock(props: GetStoreBlockProps) {
   const [id, setId] = useState<string | undefined>();
   const key = useKey();
   const { value } = useRecoilValue(blockStateAtomFamily(id || ''));
+  console.log('value', value);
 
   useEffect(() => {
+    console.log('key', key);
     setId(stores.get(key));
   }, [key]);
 
